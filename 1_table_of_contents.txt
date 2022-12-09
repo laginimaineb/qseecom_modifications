@@ -1,0 +1,539 @@
+2022-10-09T20:21:49.8671294Z Requested labels: self-hosted
+2022-10-09T20:21:49.8671363Z Job defined at: ethereum/consensus-specs/.github/workflows/run-tests.yml@refs/pull/3028/merge
+2022-10-09T20:21:49.8671386Z Waiting for a runner to pick up this job...
+2022-10-09T20:21:50.0451292Z Job is about to start running on the runner: github-actions-runner-01-01 (repository)
+2022-10-09T20:21:53.8491644Z Current runner version: '2.298.2'
+2022-10-09T20:21:53.8497089Z Runner name: 'github-actions-runner-01-01'
+2022-10-09T20:21:53.8497610Z Runner group name: 'Default'
+2022-10-09T20:21:53.8498320Z Machine name: 'github-actions-runner-01'
+2022-10-09T20:21:53.8500572Z ##[group]GITHUB_TOKEN Permissions
+2022-10-09T20:21:53.8501286Z Actions: read
+2022-10-09T20:21:53.8501697Z Checks: read
+2022-10-09T20:21:53.8502038Z Contents: read
+2022-10-09T20:21:53.8502374Z Deployments: read
+2022-10-09T20:21:53.8502710Z Discussions: read
+2022-10-09T20:21:53.8503046Z Issues: read
+2022-10-09T20:21:53.8503340Z Metadata: read
+2022-10-09T20:21:53.8503675Z Packages: read
+2022-10-09T20:21:53.8504011Z Pages: read
+2022-10-09T20:21:53.8504328Z PullRequests: read
+2022-10-09T20:21:53.8504708Z RepositoryProjects: read
+2022-10-09T20:21:53.8505090Z SecurityEvents: read
+2022-10-09T20:21:53.8505435Z Statuses: read
+2022-10-09T20:21:53.8505796Z ##[endgroup]
+2022-10-09T20:21:53.8508762Z Secret source: None
+2022-10-09T20:21:53.8509339Z Prepare workflow directory
+2022-10-09T20:21:53.9363993Z Prepare all required actions
+2022-10-09T20:21:53.9523943Z Getting action download info
+2022-10-09T20:21:54.2213554Z Download action repository 'actions/cache@v2' (SHA:937d24475381cd9c75ae6db12cb4e79714b926ed)
+2022-10-09T20:21:55.0157406Z ##[group]Run actions/cache@v2
+2022-10-09T20:21:55.0157724Z with:
+2022-10-09T20:21:55.0158083Z   path: ./*
+2022-10-09T20:21:55.0158443Z   key: 60daa32ca6be600ef610cfd1ac62abb92a07de36
+2022-10-09T20:21:55.0158750Z env:
+2022-10-09T20:21:55.0158996Z   TEST_TYPE: minimal
+2022-10-09T20:21:55.0159323Z   DEFAULT_BRANCH: dev
+2022-10-09T20:21:55.0159602Z ##[endgroup]
+2022-10-09T20:21:57.3478144Z Received 1020557 of 1020557 (100.0%), 1.0 MBs/sec
+2022-10-09T20:21:57.3480292Z Cache Size: ~1 MB (1020557 B)
+2022-10-09T20:21:57.3520621Z [command]/usr/bin/tar -z -xf /home/devops/consensus-specs-01/consensus-specs-01/_temp/7da3ff55-0029-4948-a9dc-490f279b6fec/cache.tgz -P -C /home/devops/consensus-specs-01/consensus-specs-01/consensus-specs/consensus-specs
+2022-10-09T20:21:57.4001225Z Cache restored successfully
+2022-10-09T20:21:57.4018725Z 
+2022-10-09T20:21:57.4058671Z Cache restored from key: 60daa32ca6be600ef610cfd1ac62abb92a07de36
+2022-10-09T20:21:57.4501756Z ##[group]Run sudo npm install -g doctoc@2 && make check_toc
+2022-10-09T20:21:57.4502702Z [36;1msudo npm install -g doctoc@2 && make check_toc[0m
+2022-10-09T20:21:57.4527394Z shell: /usr/bin/zsh {0}
+2022-10-09T20:21:57.4527952Z env:
+2022-10-09T20:21:57.4528558Z   TEST_TYPE: minimal
+2022-10-09T20:21:57.4529064Z   DEFAULT_BRANCH: dev
+2022-10-09T20:21:57.4529651Z ##[endgroup]
+2022-10-09T20:22:07.7461751Z 
+2022-10-09T20:22:07.7462810Z changed 71 packages, and audited 72 packages in 10s
+2022-10-09T20:22:07.7463412Z 
+2022-10-09T20:22:07.7463761Z 54 packages are looking for funding
+2022-10-09T20:22:07.7464466Z   run `npm fund` for details
+2022-10-09T20:22:07.7473645Z 
+2022-10-09T20:22:07.7474023Z found 0 vulnerabilities
+2022-10-09T20:22:07.7609668Z cp specs/phase0/beacon-chain.md specs/phase0/beacon-chain.md.tmp && \
+2022-10-09T20:22:07.7610722Z doctoc specs/phase0/beacon-chain.md && \
+2022-10-09T20:22:07.7611656Z diff -q specs/phase0/beacon-chain.md specs/phase0/beacon-chain.md.tmp && \
+2022-10-09T20:22:07.7612464Z rm specs/phase0/beacon-chain.md.tmp
+2022-10-09T20:22:07.9295761Z 
+2022-10-09T20:22:07.9297359Z DocToccing single file "specs/phase0/beacon-chain.md" for github.com.
+2022-10-09T20:22:07.9303652Z 
+2022-10-09T20:22:07.9304021Z ==================
+2022-10-09T20:22:07.9304254Z 
+2022-10-09T20:22:08.2849064Z "specs/phase0/beacon-chain.md" will be updated
+2022-10-09T20:22:08.2853808Z 
+2022-10-09T20:22:08.2854158Z Everything is OK.
+2022-10-09T20:22:08.2965707Z cp specs/phase0/deposit-contract.md specs/phase0/deposit-contract.md.tmp && \
+2022-10-09T20:22:08.2966303Z doctoc specs/phase0/deposit-contract.md && \
+2022-10-09T20:22:08.2966828Z diff -q specs/phase0/deposit-contract.md specs/phase0/deposit-contract.md.tmp && \
+2022-10-09T20:22:08.2967235Z rm specs/phase0/deposit-contract.md.tmp
+2022-10-09T20:22:08.4656584Z 
+2022-10-09T20:22:08.4657719Z DocToccing single file "specs/phase0/deposit-contract.md" for github.com.
+2022-10-09T20:22:08.4663770Z 
+2022-10-09T20:22:08.4663954Z ==================
+2022-10-09T20:22:08.4665161Z 
+2022-10-09T20:22:08.5462047Z "specs/phase0/deposit-contract.md" will be updated
+2022-10-09T20:22:08.5465198Z 
+2022-10-09T20:22:08.5465596Z Everything is OK.
+2022-10-09T20:22:08.5622838Z cp specs/phase0/fork-choice.md specs/phase0/fork-choice.md.tmp && \
+2022-10-09T20:22:08.5623752Z doctoc specs/phase0/fork-choice.md && \
+2022-10-09T20:22:08.5624632Z diff -q specs/phase0/fork-choice.md specs/phase0/fork-choice.md.tmp && \
+2022-10-09T20:22:08.5625435Z rm specs/phase0/fork-choice.md.tmp
+2022-10-09T20:22:08.7314756Z 
+2022-10-09T20:22:08.7315914Z DocToccing single file "specs/phase0/fork-choice.md" for github.com.
+2022-10-09T20:22:08.7320041Z 
+2022-10-09T20:22:08.7320636Z ==================
+2022-10-09T20:22:08.7320944Z 
+2022-10-09T20:22:08.8624592Z "specs/phase0/fork-choice.md" will be updated
+2022-10-09T20:22:08.8631273Z 
+2022-10-09T20:22:08.8631949Z Everything is OK.
+2022-10-09T20:22:08.8785908Z cp specs/phase0/p2p-interface.md specs/phase0/p2p-interface.md.tmp && \
+2022-10-09T20:22:08.8786807Z doctoc specs/phase0/p2p-interface.md && \
+2022-10-09T20:22:08.8787692Z diff -q specs/phase0/p2p-interface.md specs/phase0/p2p-interface.md.tmp && \
+2022-10-09T20:22:08.8788544Z rm specs/phase0/p2p-interface.md.tmp
+2022-10-09T20:22:09.0688635Z 
+2022-10-09T20:22:09.0690679Z DocToccing single file "specs/phase0/p2p-interface.md" for github.com.
+2022-10-09T20:22:09.0695826Z 
+2022-10-09T20:22:09.0696356Z ==================
+2022-10-09T20:22:09.0696678Z 
+2022-10-09T20:22:09.7382240Z "specs/phase0/p2p-interface.md" will be updated
+2022-10-09T20:22:09.7390076Z 
+2022-10-09T20:22:09.7390341Z Everything is OK.
+2022-10-09T20:22:09.7534620Z cp specs/phase0/validator.md specs/phase0/validator.md.tmp && \
+2022-10-09T20:22:09.7536021Z doctoc specs/phase0/validator.md && \
+2022-10-09T20:22:09.7537004Z diff -q specs/phase0/validator.md specs/phase0/validator.md.tmp && \
+2022-10-09T20:22:09.7537515Z rm specs/phase0/validator.md.tmp
+2022-10-09T20:22:09.9215376Z 
+2022-10-09T20:22:09.9216549Z DocToccing single file "specs/phase0/validator.md" for github.com.
+2022-10-09T20:22:09.9222601Z 
+2022-10-09T20:22:09.9222998Z ==================
+2022-10-09T20:22:09.9223320Z 
+2022-10-09T20:22:10.2346416Z "specs/phase0/validator.md" will be updated
+2022-10-09T20:22:10.2353645Z 
+2022-10-09T20:22:10.2353943Z Everything is OK.
+2022-10-09T20:22:10.2469035Z cp specs/phase0/weak-subjectivity.md specs/phase0/weak-subjectivity.md.tmp && \
+2022-10-09T20:22:10.2469981Z doctoc specs/phase0/weak-subjectivity.md && \
+2022-10-09T20:22:10.2470932Z diff -q specs/phase0/weak-subjectivity.md specs/phase0/weak-subjectivity.md.tmp && \
+2022-10-09T20:22:10.2471798Z rm specs/phase0/weak-subjectivity.md.tmp
+2022-10-09T20:22:10.4392584Z 
+2022-10-09T20:22:10.4393748Z DocToccing single file "specs/phase0/weak-subjectivity.md" for github.com.
+2022-10-09T20:22:10.4400670Z 
+2022-10-09T20:22:10.4400967Z ==================
+2022-10-09T20:22:10.4401199Z 
+2022-10-09T20:22:10.5783131Z "specs/phase0/weak-subjectivity.md" will be updated
+2022-10-09T20:22:10.5786589Z 
+2022-10-09T20:22:10.5786982Z Everything is OK.
+2022-10-09T20:22:10.6074012Z cp specs/altair/beacon-chain.md specs/altair/beacon-chain.md.tmp && \
+2022-10-09T20:22:10.6075034Z doctoc specs/altair/beacon-chain.md && \
+2022-10-09T20:22:10.6075899Z diff -q specs/altair/beacon-chain.md specs/altair/beacon-chain.md.tmp && \
+2022-10-09T20:22:10.6076709Z rm specs/altair/beacon-chain.md.tmp
+2022-10-09T20:22:10.7974042Z 
+2022-10-09T20:22:10.7974945Z DocToccing single file "specs/altair/beacon-chain.md" for github.com.
+2022-10-09T20:22:10.7975471Z 
+2022-10-09T20:22:10.7975636Z ==================
+2022-10-09T20:22:10.7976199Z 
+2022-10-09T20:22:10.9755909Z "specs/altair/beacon-chain.md" will be updated
+2022-10-09T20:22:10.9762348Z 
+2022-10-09T20:22:10.9762912Z Everything is OK.
+2022-10-09T20:22:11.0006300Z cp specs/altair/bls.md specs/altair/bls.md.tmp && \
+2022-10-09T20:22:11.0007568Z doctoc specs/altair/bls.md && \
+2022-10-09T20:22:11.0008533Z diff -q specs/altair/bls.md specs/altair/bls.md.tmp && \
+2022-10-09T20:22:11.0009124Z rm specs/altair/bls.md.tmp
+2022-10-09T20:22:11.1939047Z 
+2022-10-09T20:22:11.1939770Z DocToccing single file "specs/altair/bls.md" for github.com.
+2022-10-09T20:22:11.1946276Z 
+2022-10-09T20:22:11.1946763Z ==================
+2022-10-09T20:22:11.1947123Z 
+2022-10-09T20:22:11.2319636Z "specs/altair/bls.md" will be updated
+2022-10-09T20:22:11.2323502Z 
+2022-10-09T20:22:11.2324093Z Everything is OK.
+2022-10-09T20:22:11.2405801Z cp specs/altair/fork.md specs/altair/fork.md.tmp && \
+2022-10-09T20:22:11.2406648Z doctoc specs/altair/fork.md && \
+2022-10-09T20:22:11.2407581Z diff -q specs/altair/fork.md specs/altair/fork.md.tmp && \
+2022-10-09T20:22:11.2408162Z rm specs/altair/fork.md.tmp
+2022-10-09T20:22:11.4355415Z 
+2022-10-09T20:22:11.4356285Z DocToccing single file "specs/altair/fork.md" for github.com.
+2022-10-09T20:22:11.4362592Z 
+2022-10-09T20:22:11.4363131Z ==================
+2022-10-09T20:22:11.4363567Z 
+2022-10-09T20:22:11.4946904Z "specs/altair/fork.md" will be updated
+2022-10-09T20:22:11.4948635Z 
+2022-10-09T20:22:11.4948943Z Everything is OK.
+2022-10-09T20:22:11.5059677Z cp specs/altair/p2p-interface.md specs/altair/p2p-interface.md.tmp && \
+2022-10-09T20:22:11.5060700Z doctoc specs/altair/p2p-interface.md && \
+2022-10-09T20:22:11.5061580Z diff -q specs/altair/p2p-interface.md specs/altair/p2p-interface.md.tmp && \
+2022-10-09T20:22:11.5062388Z rm specs/altair/p2p-interface.md.tmp
+2022-10-09T20:22:11.6990640Z 
+2022-10-09T20:22:11.6992031Z DocToccing single file "specs/altair/p2p-interface.md" for github.com.
+2022-10-09T20:22:11.6997917Z 
+2022-10-09T20:22:11.6998267Z ==================
+2022-10-09T20:22:11.6998692Z 
+2022-10-09T20:22:11.8904887Z "specs/altair/p2p-interface.md" will be updated
+2022-10-09T20:22:11.8905337Z 
+2022-10-09T20:22:11.8905549Z Everything is OK.
+2022-10-09T20:22:11.9129919Z cp specs/altair/validator.md specs/altair/validator.md.tmp && \
+2022-10-09T20:22:11.9130661Z doctoc specs/altair/validator.md && \
+2022-10-09T20:22:11.9131986Z diff -q specs/altair/validator.md specs/altair/validator.md.tmp && \
+2022-10-09T20:22:11.9132550Z rm specs/altair/validator.md.tmp
+2022-10-09T20:22:12.1057996Z 
+2022-10-09T20:22:12.1058776Z DocToccing single file "specs/altair/validator.md" for github.com.
+2022-10-09T20:22:12.1062405Z 
+2022-10-09T20:22:12.1062873Z ==================
+2022-10-09T20:22:12.1063290Z 
+2022-10-09T20:22:12.3144474Z "specs/altair/validator.md" will be updated
+2022-10-09T20:22:12.3145558Z 
+2022-10-09T20:22:12.3145846Z Everything is OK.
+2022-10-09T20:22:12.3287088Z cp specs/altair/light-client/full-node.md specs/altair/light-client/full-node.md.tmp && \
+2022-10-09T20:22:12.3288167Z doctoc specs/altair/light-client/full-node.md && \
+2022-10-09T20:22:12.3289179Z diff -q specs/altair/light-client/full-node.md specs/altair/light-client/full-node.md.tmp && \
+2022-10-09T20:22:12.3290035Z rm specs/altair/light-client/full-node.md.tmp
+2022-10-09T20:22:12.5216370Z 
+2022-10-09T20:22:12.5217350Z DocToccing single file "specs/altair/light-client/full-node.md" for github.com.
+2022-10-09T20:22:12.5223429Z 
+2022-10-09T20:22:12.5223936Z ==================
+2022-10-09T20:22:12.5224253Z 
+2022-10-09T20:22:12.6052711Z "specs/altair/light-client/full-node.md" will be updated
+2022-10-09T20:22:12.6056803Z 
+2022-10-09T20:22:12.6057584Z Everything is OK.
+2022-10-09T20:22:12.6144643Z cp specs/altair/light-client/light-client.md specs/altair/light-client/light-client.md.tmp && \
+2022-10-09T20:22:12.6145680Z doctoc specs/altair/light-client/light-client.md && \
+2022-10-09T20:22:12.6146697Z diff -q specs/altair/light-client/light-client.md specs/altair/light-client/light-client.md.tmp && \
+2022-10-09T20:22:12.6147609Z rm specs/altair/light-client/light-client.md.tmp
+2022-10-09T20:22:12.8072895Z 
+2022-10-09T20:22:12.8074385Z DocToccing single file "specs/altair/light-client/light-client.md" for github.com.
+2022-10-09T20:22:12.8080360Z 
+2022-10-09T20:22:12.8081071Z ==================
+2022-10-09T20:22:12.8081492Z 
+2022-10-09T20:22:12.8737903Z "specs/altair/light-client/light-client.md" will be updated
+2022-10-09T20:22:12.8738551Z 
+2022-10-09T20:22:12.8738797Z Everything is OK.
+2022-10-09T20:22:12.8893115Z cp specs/altair/light-client/p2p-interface.md specs/altair/light-client/p2p-interface.md.tmp && \
+2022-10-09T20:22:12.8894124Z doctoc specs/altair/light-client/p2p-interface.md && \
+2022-10-09T20:22:12.8895178Z diff -q specs/altair/light-client/p2p-interface.md specs/altair/light-client/p2p-interface.md.tmp && \
+2022-10-09T20:22:12.8896120Z rm specs/altair/light-client/p2p-interface.md.tmp
+2022-10-09T20:22:13.0792724Z 
+2022-10-09T20:22:13.0794192Z DocToccing single file "specs/altair/light-client/p2p-interface.md" for github.com.
+2022-10-09T20:22:13.0800000Z 
+2022-10-09T20:22:13.0800578Z ==================
+2022-10-09T20:22:13.0800966Z 
+2022-10-09T20:22:13.2647453Z "specs/altair/light-client/p2p-interface.md" will be updated
+2022-10-09T20:22:13.2651332Z 
+2022-10-09T20:22:13.2651801Z Everything is OK.
+2022-10-09T20:22:13.2900210Z cp specs/altair/light-client/sync-protocol.md specs/altair/light-client/sync-protocol.md.tmp && \
+2022-10-09T20:22:13.2901440Z doctoc specs/altair/light-client/sync-protocol.md && \
+2022-10-09T20:22:13.2902494Z diff -q specs/altair/light-client/sync-protocol.md specs/altair/light-client/sync-protocol.md.tmp && \
+2022-10-09T20:22:13.2903454Z rm specs/altair/light-client/sync-protocol.md.tmp
+2022-10-09T20:22:13.4585598Z 
+2022-10-09T20:22:13.4586690Z DocToccing single file "specs/altair/light-client/sync-protocol.md" for github.com.
+2022-10-09T20:22:13.4592784Z 
+2022-10-09T20:22:13.4593328Z ==================
+2022-10-09T20:22:13.4593735Z 
+2022-10-09T20:22:13.5877333Z "specs/altair/light-client/sync-protocol.md" will be updated
+2022-10-09T20:22:13.5884117Z 
+2022-10-09T20:22:13.5884737Z Everything is OK.
+2022-10-09T20:22:13.6209952Z cp specs/bellatrix/beacon-chain.md specs/bellatrix/beacon-chain.md.tmp && \
+2022-10-09T20:22:13.6211022Z doctoc specs/bellatrix/beacon-chain.md && \
+2022-10-09T20:22:13.6211935Z diff -q specs/bellatrix/beacon-chain.md specs/bellatrix/beacon-chain.md.tmp && \
+2022-10-09T20:22:13.6213180Z rm specs/bellatrix/beacon-chain.md.tmp
+2022-10-09T20:22:13.7905063Z 
+2022-10-09T20:22:13.7906383Z DocToccing single file "specs/bellatrix/beacon-chain.md" for github.com.
+2022-10-09T20:22:13.7910433Z 
+2022-10-09T20:22:13.7910745Z ==================
+2022-10-09T20:22:13.7910982Z 
+2022-10-09T20:22:13.9255177Z "specs/bellatrix/beacon-chain.md" will be updated
+2022-10-09T20:22:13.9259379Z 
+2022-10-09T20:22:13.9259942Z Everything is OK.
+2022-10-09T20:22:13.9486473Z cp specs/bellatrix/fork-choice.md specs/bellatrix/fork-choice.md.tmp && \
+2022-10-09T20:22:13.9487396Z doctoc specs/bellatrix/fork-choice.md && \
+2022-10-09T20:22:13.9488290Z diff -q specs/bellatrix/fork-choice.md specs/bellatrix/fork-choice.md.tmp && \
+2022-10-09T20:22:13.9489094Z rm specs/bellatrix/fork-choice.md.tmp
+2022-10-09T20:22:14.1197935Z 
+2022-10-09T20:22:14.1198909Z DocToccing single file "specs/bellatrix/fork-choice.md" for github.com.
+2022-10-09T20:22:14.1205226Z 
+2022-10-09T20:22:14.1205831Z ==================
+2022-10-09T20:22:14.1206233Z 
+2022-10-09T20:22:14.2225327Z "specs/bellatrix/fork-choice.md" will be updated
+2022-10-09T20:22:14.2229339Z 
+2022-10-09T20:22:14.2229633Z Everything is OK.
+2022-10-09T20:22:14.2364420Z cp specs/bellatrix/fork.md specs/bellatrix/fork.md.tmp && \
+2022-10-09T20:22:14.2365277Z doctoc specs/bellatrix/fork.md && \
+2022-10-09T20:22:14.2366577Z diff -q specs/bellatrix/fork.md specs/bellatrix/fork.md.tmp && \
+2022-10-09T20:22:14.2367439Z rm specs/bellatrix/fork.md.tmp
+2022-10-09T20:22:14.4302536Z 
+2022-10-09T20:22:14.4303180Z DocToccing single file "specs/bellatrix/fork.md" for github.com.
+2022-10-09T20:22:14.4310007Z 
+2022-10-09T20:22:14.4310396Z ==================
+2022-10-09T20:22:14.4310718Z 
+2022-10-09T20:22:14.4817196Z "specs/bellatrix/fork.md" will be updated
+2022-10-09T20:22:14.4821226Z 
+2022-10-09T20:22:14.4821643Z Everything is OK.
+2022-10-09T20:22:14.4903502Z cp specs/bellatrix/p2p-interface.md specs/bellatrix/p2p-interface.md.tmp && \
+2022-10-09T20:22:14.4904496Z doctoc specs/bellatrix/p2p-interface.md && \
+2022-10-09T20:22:14.4905452Z diff -q specs/bellatrix/p2p-interface.md specs/bellatrix/p2p-interface.md.tmp && \
+2022-10-09T20:22:14.4906289Z rm specs/bellatrix/p2p-interface.md.tmp
+2022-10-09T20:22:14.6593622Z 
+2022-10-09T20:22:14.6594946Z DocToccing single file "specs/bellatrix/p2p-interface.md" for github.com.
+2022-10-09T20:22:14.6601197Z 
+2022-10-09T20:22:14.6601736Z ==================
+2022-10-09T20:22:14.6602057Z 
+2022-10-09T20:22:14.8177038Z "specs/bellatrix/p2p-interface.md" will be updated
+2022-10-09T20:22:14.8181229Z 
+2022-10-09T20:22:14.8181697Z Everything is OK.
+2022-10-09T20:22:14.8472025Z cp specs/bellatrix/validator.md specs/bellatrix/validator.md.tmp && \
+2022-10-09T20:22:14.8472919Z doctoc specs/bellatrix/validator.md && \
+2022-10-09T20:22:14.8473961Z diff -q specs/bellatrix/validator.md specs/bellatrix/validator.md.tmp && \
+2022-10-09T20:22:14.8474921Z rm specs/bellatrix/validator.md.tmp
+2022-10-09T20:22:15.0389910Z 
+2022-10-09T20:22:15.0390672Z DocToccing single file "specs/bellatrix/validator.md" for github.com.
+2022-10-09T20:22:15.0397040Z 
+2022-10-09T20:22:15.0397613Z ==================
+2022-10-09T20:22:15.0397949Z 
+2022-10-09T20:22:15.1348255Z "specs/bellatrix/validator.md" will be updated
+2022-10-09T20:22:15.1352456Z 
+2022-10-09T20:22:15.1352957Z Everything is OK.
+2022-10-09T20:22:15.1685904Z cp specs/capella/beacon-chain.md specs/capella/beacon-chain.md.tmp && \
+2022-10-09T20:22:15.1686746Z doctoc specs/capella/beacon-chain.md && \
+2022-10-09T20:22:15.1687555Z diff -q specs/capella/beacon-chain.md specs/capella/beacon-chain.md.tmp && \
+2022-10-09T20:22:15.1688251Z rm specs/capella/beacon-chain.md.tmp
+2022-10-09T20:22:15.3657957Z 
+2022-10-09T20:22:15.3658971Z DocToccing single file "specs/capella/beacon-chain.md" for github.com.
+2022-10-09T20:22:15.3665281Z 
+2022-10-09T20:22:15.3665703Z ==================
+2022-10-09T20:22:15.3666109Z 
+2022-10-09T20:22:15.4958456Z "specs/capella/beacon-chain.md" will be updated
+2022-10-09T20:22:15.4962657Z 
+2022-10-09T20:22:15.4963286Z Everything is OK.
+2022-10-09T20:22:15.5265801Z cp specs/capella/fork-choice.md specs/capella/fork-choice.md.tmp && \
+2022-10-09T20:22:15.5266250Z doctoc specs/capella/fork-choice.md && \
+2022-10-09T20:22:15.5266681Z diff -q specs/capella/fork-choice.md specs/capella/fork-choice.md.tmp && \
+2022-10-09T20:22:15.5267078Z rm specs/capella/fork-choice.md.tmp
+2022-10-09T20:22:15.7188157Z 
+2022-10-09T20:22:15.7189330Z DocToccing single file "specs/capella/fork-choice.md" for github.com.
+2022-10-09T20:22:15.7196475Z 
+2022-10-09T20:22:15.7196825Z ==================
+2022-10-09T20:22:15.7197085Z 
+2022-10-09T20:22:15.7568691Z "specs/capella/fork-choice.md" will be updated
+2022-10-09T20:22:15.7573279Z 
+2022-10-09T20:22:15.7573790Z Everything is OK.
+2022-10-09T20:22:15.7656729Z cp specs/capella/fork.md specs/capella/fork.md.tmp && \
+2022-10-09T20:22:15.7657397Z doctoc specs/capella/fork.md && \
+2022-10-09T20:22:15.7658257Z diff -q specs/capella/fork.md specs/capella/fork.md.tmp && \
+2022-10-09T20:22:15.7658891Z rm specs/capella/fork.md.tmp
+2022-10-09T20:22:15.9584347Z 
+2022-10-09T20:22:15.9585105Z DocToccing single file "specs/capella/fork.md" for github.com.
+2022-10-09T20:22:15.9592655Z 
+2022-10-09T20:22:15.9593360Z ==================
+2022-10-09T20:22:15.9593701Z 
+2022-10-09T20:22:16.0155089Z "specs/capella/fork.md" will be updated
+2022-10-09T20:22:16.0159811Z 
+2022-10-09T20:22:16.0160564Z Everything is OK.
+2022-10-09T20:22:16.0268662Z cp specs/capella/p2p-interface.md specs/capella/p2p-interface.md.tmp && \
+2022-10-09T20:22:16.0269671Z doctoc specs/capella/p2p-interface.md && \
+2022-10-09T20:22:16.0270551Z diff -q specs/capella/p2p-interface.md specs/capella/p2p-interface.md.tmp && \
+2022-10-09T20:22:16.0271388Z rm specs/capella/p2p-interface.md.tmp
+2022-10-09T20:22:16.2205237Z 
+2022-10-09T20:22:16.2206500Z DocToccing single file "specs/capella/p2p-interface.md" for github.com.
+2022-10-09T20:22:16.2212911Z 
+2022-10-09T20:22:16.2213171Z ==================
+2022-10-09T20:22:16.2213402Z 
+2022-10-09T20:22:16.2290063Z "specs/capella/p2p-interface.md" is up to date
+2022-10-09T20:22:16.2290356Z 
+2022-10-09T20:22:16.2290522Z Everything is OK.
+2022-10-09T20:22:16.2371989Z cp specs/capella/validator.md specs/capella/validator.md.tmp && \
+2022-10-09T20:22:16.2372750Z doctoc specs/capella/validator.md && \
+2022-10-09T20:22:16.2373763Z diff -q specs/capella/validator.md specs/capella/validator.md.tmp && \
+2022-10-09T20:22:16.2374430Z rm specs/capella/validator.md.tmp
+2022-10-09T20:22:16.4056288Z 
+2022-10-09T20:22:16.4056918Z DocToccing single file "specs/capella/validator.md" for github.com.
+2022-10-09T20:22:16.4063807Z 
+2022-10-09T20:22:16.4064289Z ==================
+2022-10-09T20:22:16.4064621Z 
+2022-10-09T20:22:16.4623885Z "specs/capella/validator.md" will be updated
+2022-10-09T20:22:16.4628030Z 
+2022-10-09T20:22:16.4628626Z Everything is OK.
+2022-10-09T20:22:16.4716802Z cp specs/das/das-core.md specs/das/das-core.md.tmp && \
+2022-10-09T20:22:16.4717659Z doctoc specs/das/das-core.md && \
+2022-10-09T20:22:16.4718444Z diff -q specs/das/das-core.md specs/das/das-core.md.tmp && \
+2022-10-09T20:22:16.4719153Z rm specs/das/das-core.md.tmp
+2022-10-09T20:22:16.6670257Z 
+2022-10-09T20:22:16.6671473Z DocToccing single file "specs/das/das-core.md" for github.com.
+2022-10-09T20:22:16.6675244Z 
+2022-10-09T20:22:16.6675911Z ==================
+2022-10-09T20:22:16.6676261Z 
+2022-10-09T20:22:16.7526255Z "specs/das/das-core.md" will be updated
+2022-10-09T20:22:16.7530215Z 
+2022-10-09T20:22:16.7530977Z Everything is OK.
+2022-10-09T20:22:16.7712561Z cp specs/das/fork-choice.md specs/das/fork-choice.md.tmp && \
+2022-10-09T20:22:16.7713504Z doctoc specs/das/fork-choice.md && \
+2022-10-09T20:22:16.7714705Z diff -q specs/das/fork-choice.md specs/das/fork-choice.md.tmp && \
+2022-10-09T20:22:16.7715477Z rm specs/das/fork-choice.md.tmp
+2022-10-09T20:22:16.9621751Z 
+2022-10-09T20:22:16.9623123Z DocToccing single file "specs/das/fork-choice.md" for github.com.
+2022-10-09T20:22:16.9629047Z 
+2022-10-09T20:22:16.9629467Z ==================
+2022-10-09T20:22:16.9629785Z 
+2022-10-09T20:22:16.9928302Z "specs/das/fork-choice.md" will be updated
+2022-10-09T20:22:16.9931444Z 
+2022-10-09T20:22:16.9931850Z Everything is OK.
+2022-10-09T20:22:17.0019313Z cp specs/das/p2p-interface.md specs/das/p2p-interface.md.tmp && \
+2022-10-09T20:22:17.0020231Z doctoc specs/das/p2p-interface.md && \
+2022-10-09T20:22:17.0021091Z diff -q specs/das/p2p-interface.md specs/das/p2p-interface.md.tmp && \
+2022-10-09T20:22:17.0021877Z rm specs/das/p2p-interface.md.tmp
+2022-10-09T20:22:17.1952602Z 
+2022-10-09T20:22:17.1953596Z DocToccing single file "specs/das/p2p-interface.md" for github.com.
+2022-10-09T20:22:17.1960561Z 
+2022-10-09T20:22:17.1961223Z ==================
+2022-10-09T20:22:17.1961440Z 
+2022-10-09T20:22:17.3525865Z "specs/das/p2p-interface.md" will be updated
+2022-10-09T20:22:17.3529915Z 
+2022-10-09T20:22:17.3530237Z Everything is OK.
+2022-10-09T20:22:17.3828328Z cp specs/das/sampling.md specs/das/sampling.md.tmp && \
+2022-10-09T20:22:17.3828995Z doctoc specs/das/sampling.md && \
+2022-10-09T20:22:17.3829894Z diff -q specs/das/sampling.md specs/das/sampling.md.tmp && \
+2022-10-09T20:22:17.3830561Z rm specs/das/sampling.md.tmp
+2022-10-09T20:22:17.5522351Z 
+2022-10-09T20:22:17.5523127Z DocToccing single file "specs/das/sampling.md" for github.com.
+2022-10-09T20:22:17.5529557Z 
+2022-10-09T20:22:17.5529920Z ==================
+2022-10-09T20:22:17.5530190Z 
+2022-10-09T20:22:17.6081057Z "specs/das/sampling.md" will be updated
+2022-10-09T20:22:17.6084870Z 
+2022-10-09T20:22:17.6085230Z Everything is OK.
+2022-10-09T20:22:17.6168623Z cp specs/sharding/beacon-chain.md specs/sharding/beacon-chain.md.tmp && \
+2022-10-09T20:22:17.6169342Z doctoc specs/sharding/beacon-chain.md && \
+2022-10-09T20:22:17.6170090Z diff -q specs/sharding/beacon-chain.md specs/sharding/beacon-chain.md.tmp && \
+2022-10-09T20:22:17.6170770Z rm specs/sharding/beacon-chain.md.tmp
+2022-10-09T20:22:17.8080745Z 
+2022-10-09T20:22:17.8081953Z DocToccing single file "specs/sharding/beacon-chain.md" for github.com.
+2022-10-09T20:22:17.8088056Z 
+2022-10-09T20:22:17.8088268Z ==================
+2022-10-09T20:22:17.8088694Z 
+2022-10-09T20:22:17.9237457Z "specs/sharding/beacon-chain.md" will be updated
+2022-10-09T20:22:17.9239268Z 
+2022-10-09T20:22:17.9240077Z Everything is OK.
+2022-10-09T20:22:17.9420228Z cp specs/sharding/p2p-interface.md specs/sharding/p2p-interface.md.tmp && \
+2022-10-09T20:22:17.9421245Z doctoc specs/sharding/p2p-interface.md && \
+2022-10-09T20:22:17.9422154Z diff -q specs/sharding/p2p-interface.md specs/sharding/p2p-interface.md.tmp && \
+2022-10-09T20:22:17.9422992Z rm specs/sharding/p2p-interface.md.tmp
+2022-10-09T20:22:18.1113386Z 
+2022-10-09T20:22:18.1114686Z DocToccing single file "specs/sharding/p2p-interface.md" for github.com.
+2022-10-09T20:22:18.1120890Z 
+2022-10-09T20:22:18.1121538Z ==================
+2022-10-09T20:22:18.1121954Z 
+2022-10-09T20:22:18.2093451Z "specs/sharding/p2p-interface.md" will be updated
+2022-10-09T20:22:18.2094780Z 
+2022-10-09T20:22:18.2095074Z Everything is OK.
+2022-10-09T20:22:18.2382156Z cp specs/sharding/polynomial-commitments.md specs/sharding/polynomial-commitments.md.tmp && \
+2022-10-09T20:22:18.2383328Z doctoc specs/sharding/polynomial-commitments.md && \
+2022-10-09T20:22:18.2384426Z diff -q specs/sharding/polynomial-commitments.md specs/sharding/polynomial-commitments.md.tmp && \
+2022-10-09T20:22:18.2385392Z rm specs/sharding/polynomial-commitments.md.tmp
+2022-10-09T20:22:18.4286997Z 
+2022-10-09T20:22:18.4288208Z DocToccing single file "specs/sharding/polynomial-commitments.md" for github.com.
+2022-10-09T20:22:18.4294306Z 
+2022-10-09T20:22:18.4294500Z ==================
+2022-10-09T20:22:18.4295163Z 
+2022-10-09T20:22:18.5256162Z "specs/sharding/polynomial-commitments.md" will be updated
+2022-10-09T20:22:18.5256777Z 
+2022-10-09T20:22:18.5257004Z Everything is OK.
+2022-10-09T20:22:18.5391418Z cp specs/sharding/validator.md specs/sharding/validator.md.tmp && \
+2022-10-09T20:22:18.5392264Z doctoc specs/sharding/validator.md && \
+2022-10-09T20:22:18.5393500Z diff -q specs/sharding/validator.md specs/sharding/validator.md.tmp && \
+2022-10-09T20:22:18.5394356Z rm specs/sharding/validator.md.tmp
+2022-10-09T20:22:18.7321960Z 
+2022-10-09T20:22:18.7322991Z DocToccing single file "specs/sharding/validator.md" for github.com.
+2022-10-09T20:22:18.7329652Z 
+2022-10-09T20:22:18.7330164Z ==================
+2022-10-09T20:22:18.7330608Z 
+2022-10-09T20:22:18.8327124Z "specs/sharding/validator.md" will be updated
+2022-10-09T20:22:18.8331079Z 
+2022-10-09T20:22:18.8331604Z Everything is OK.
+2022-10-09T20:22:18.8654823Z cp specs/eip4844/beacon-chain.md specs/eip4844/beacon-chain.md.tmp && \
+2022-10-09T20:22:18.8655940Z doctoc specs/eip4844/beacon-chain.md && \
+2022-10-09T20:22:18.8656995Z diff -q specs/eip4844/beacon-chain.md specs/eip4844/beacon-chain.md.tmp && \
+2022-10-09T20:22:18.8657794Z rm specs/eip4844/beacon-chain.md.tmp
+2022-10-09T20:22:19.0615276Z 
+2022-10-09T20:22:19.0616439Z DocToccing single file "specs/eip4844/beacon-chain.md" for github.com.
+2022-10-09T20:22:19.0622425Z 
+2022-10-09T20:22:19.0622898Z ==================
+2022-10-09T20:22:19.0623352Z 
+2022-10-09T20:22:19.1538471Z "specs/eip4844/beacon-chain.md" will be updated
+2022-10-09T20:22:19.1541377Z 
+2022-10-09T20:22:19.1541921Z Everything is OK.
+2022-10-09T20:22:19.1627414Z cp specs/eip4844/fork.md specs/eip4844/fork.md.tmp && \
+2022-10-09T20:22:19.1628262Z doctoc specs/eip4844/fork.md && \
+2022-10-09T20:22:19.1629340Z diff -q specs/eip4844/fork.md specs/eip4844/fork.md.tmp && \
+2022-10-09T20:22:19.1629936Z rm specs/eip4844/fork.md.tmp
+2022-10-09T20:22:19.3503424Z 
+2022-10-09T20:22:19.3504408Z DocToccing single file "specs/eip4844/fork.md" for github.com.
+2022-10-09T20:22:19.3507118Z 
+2022-10-09T20:22:19.3507407Z ==================
+2022-10-09T20:22:19.3507620Z 
+2022-10-09T20:22:19.3963574Z "specs/eip4844/fork.md" will be updated
+2022-10-09T20:22:19.3966980Z 
+2022-10-09T20:22:19.3967543Z Everything is OK.
+2022-10-09T20:22:19.4051410Z cp specs/eip4844/p2p-interface.md specs/eip4844/p2p-interface.md.tmp && \
+2022-10-09T20:22:19.4051854Z doctoc specs/eip4844/p2p-interface.md && \
+2022-10-09T20:22:19.4052299Z diff -q specs/eip4844/p2p-interface.md specs/eip4844/p2p-interface.md.tmp && \
+2022-10-09T20:22:19.4052696Z rm specs/eip4844/p2p-interface.md.tmp
+2022-10-09T20:22:19.5993713Z 
+2022-10-09T20:22:19.5994981Z DocToccing single file "specs/eip4844/p2p-interface.md" for github.com.
+2022-10-09T20:22:19.6001505Z 
+2022-10-09T20:22:19.6001822Z ==================
+2022-10-09T20:22:19.6002106Z 
+2022-10-09T20:22:19.7576547Z "specs/eip4844/p2p-interface.md" will be updated
+2022-10-09T20:22:19.7580237Z 
+2022-10-09T20:22:19.7580430Z Everything is OK.
+2022-10-09T20:22:19.7862091Z cp specs/eip4844/polynomial-commitments.md specs/eip4844/polynomial-commitments.md.tmp && \
+2022-10-09T20:22:19.7863103Z doctoc specs/eip4844/polynomial-commitments.md && \
+2022-10-09T20:22:19.7864148Z diff -q specs/eip4844/polynomial-commitments.md specs/eip4844/polynomial-commitments.md.tmp && \
+2022-10-09T20:22:19.7865123Z rm specs/eip4844/polynomial-commitments.md.tmp
+2022-10-09T20:22:19.9795623Z 
+2022-10-09T20:22:19.9796598Z DocToccing single file "specs/eip4844/polynomial-commitments.md" for github.com.
+2022-10-09T20:22:19.9799814Z 
+2022-10-09T20:22:19.9800344Z ==================
+2022-10-09T20:22:19.9800670Z 
+2022-10-09T20:22:20.0669982Z "specs/eip4844/polynomial-commitments.md" will be updated
+2022-10-09T20:22:20.0675788Z 
+2022-10-09T20:22:20.0676209Z Everything is OK.
+2022-10-09T20:22:20.0843472Z cp specs/eip4844/validator.md specs/eip4844/validator.md.tmp && \
+2022-10-09T20:22:20.0844158Z doctoc specs/eip4844/validator.md && \
+2022-10-09T20:22:20.0845090Z diff -q specs/eip4844/validator.md specs/eip4844/validator.md.tmp && \
+2022-10-09T20:22:20.0845738Z rm specs/eip4844/validator.md.tmp
+2022-10-09T20:22:20.2765412Z 
+2022-10-09T20:22:20.2766614Z DocToccing single file "specs/eip4844/validator.md" for github.com.
+2022-10-09T20:22:20.2772850Z 
+2022-10-09T20:22:20.2773380Z ==================
+2022-10-09T20:22:20.2773696Z 
+2022-10-09T20:22:20.3774522Z "specs/eip4844/validator.md" will be updated
+2022-10-09T20:22:20.3777593Z 
+2022-10-09T20:22:20.3778298Z Everything is OK.
+2022-10-09T20:22:20.4089088Z cp ssz/merkle-proofs.md ssz/merkle-proofs.md.tmp && \
+2022-10-09T20:22:20.4089930Z doctoc ssz/merkle-proofs.md && \
+2022-10-09T20:22:20.4090730Z diff -q ssz/merkle-proofs.md ssz/merkle-proofs.md.tmp && \
+2022-10-09T20:22:20.4091440Z rm ssz/merkle-proofs.md.tmp
+2022-10-09T20:22:20.6027166Z 
+2022-10-09T20:22:20.6028183Z DocToccing single file "ssz/merkle-proofs.md" for github.com.
+2022-10-09T20:22:20.6034557Z 
+2022-10-09T20:22:20.6035087Z ==================
+2022-10-09T20:22:20.6035450Z 
+2022-10-09T20:22:20.7067933Z "ssz/merkle-proofs.md" will be updated
+2022-10-09T20:22:20.7072098Z 
+2022-10-09T20:22:20.7072409Z Everything is OK.
+2022-10-09T20:22:20.7163576Z cp ssz/simple-serialize.md ssz/simple-serialize.md.tmp && \
+2022-10-09T20:22:20.7164451Z doctoc ssz/simple-serialize.md && \
+2022-10-09T20:22:20.7165501Z diff -q ssz/simple-serialize.md ssz/simple-serialize.md.tmp && \
+2022-10-09T20:22:20.7166272Z rm ssz/simple-serialize.md.tmp
+2022-10-09T20:22:20.9084569Z 
+2022-10-09T20:22:20.9085899Z DocToccing single file "ssz/simple-serialize.md" for github.com.
+2022-10-09T20:22:20.9091307Z 
+2022-10-09T20:22:20.9091846Z ==================
+2022-10-09T20:22:20.9092196Z 
+2022-10-09T20:22:21.1028075Z "ssz/simple-serialize.md" will be updated
+2022-10-09T20:22:21.1032285Z 
+2022-10-09T20:22:21.1032702Z Everything is OK.
+2022-10-09T20:22:21.1326961Z Post job cleanup.
+2022-10-09T20:22:21.2861948Z Cache hit occurred on the primary key 60daa32ca6be600ef610cfd1ac62abb92a07de36, not saving cache.
+2022-10-09T20:22:21.3170571Z Cleaning up orphan processes

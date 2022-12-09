@@ -1,0 +1,7 @@
+2022-10-09T20:27:36.0904919Z ##[group]Run echo "spec_test_type=minimal" >> $GITHUB_ENV    
+2022-10-09T20:27:36.0905775Z [36;1mecho "spec_test_type=minimal" >> $GITHUB_ENV    [0m
+2022-10-09T20:27:36.0930435Z shell: /usr/bin/zsh {0}
+2022-10-09T20:27:36.0930951Z env:
+2022-10-09T20:27:36.0931423Z   TEST_TYPE: minimal
+2022-10-09T20:27:36.0931930Z   DEFAULT_BRANCH: dev
+2022-10-09T20:27:36.0932422Z ##[endgroup]

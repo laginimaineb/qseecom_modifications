@@ -1,0 +1,15 @@
+2022-10-09T20:22:04.8001075Z ##[group]Run actions/cache@v2
+2022-10-09T20:22:04.8001491Z with:
+2022-10-09T20:22:04.8001747Z   path: ./*
+2022-10-09T20:22:04.8002036Z   key: 60daa32ca6be600ef610cfd1ac62abb92a07de36
+2022-10-09T20:22:04.8002381Z env:
+2022-10-09T20:22:04.8002613Z   TEST_TYPE: minimal
+2022-10-09T20:22:04.8002872Z   DEFAULT_BRANCH: dev
+2022-10-09T20:22:04.8003147Z ##[endgroup]
+2022-10-09T20:22:06.8794709Z Received 0 of 1020557 (0.0%), 0.0 MBs/sec
+2022-10-09T20:22:07.7574449Z Received 1020557 of 1020557 (100.0%), 0.5 MBs/sec
+2022-10-09T20:22:07.7580249Z Cache Size: ~1 MB (1020557 B)
+2022-10-09T20:22:07.7614848Z [command]/usr/bin/tar -z -xf /home/devops/consensus-specs/consensus-specs/_temp/d4ffa07b-b55f-44b0-93e3-ad2cafd2ef72/cache.tgz -P -C /home/devops/consensus-specs/consensus-specs/consensus-specs/consensus-specs
+2022-10-09T20:22:07.8103088Z Cache restored successfully
+2022-10-09T20:22:07.8117778Z 
+2022-10-09T20:22:07.8207719Z Cache restored from key: 60daa32ca6be600ef610cfd1ac62abb92a07de36

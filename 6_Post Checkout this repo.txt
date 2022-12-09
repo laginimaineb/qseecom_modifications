@@ -1,0 +1,12 @@
+2022-10-09T20:21:46.7775246Z Post job cleanup.
+2022-10-09T20:21:46.9126759Z [command]/usr/bin/git version
+2022-10-09T20:21:46.9182177Z git version 2.30.2
+2022-10-09T20:21:46.9224445Z Temporarily overriding HOME='/home/devops/consensus-specs/consensus-specs/_temp/c25e40b1-b862-45d7-918f-570cfee3afea' before making global git config changes
+2022-10-09T20:21:46.9225765Z Adding repository directory to the temporary git global config as a safe directory
+2022-10-09T20:21:46.9227364Z [command]/usr/bin/git config --global --add safe.directory /home/devops/consensus-specs/consensus-specs/consensus-specs/consensus-specs
+2022-10-09T20:21:46.9276384Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2022-10-09T20:21:46.9322401Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2022-10-09T20:21:46.9670245Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2022-10-09T20:21:46.9707750Z http.https://github.com/.extraheader
+2022-10-09T20:21:46.9741248Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2022-10-09T20:21:46.9787680Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :

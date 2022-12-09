@@ -1,0 +1,11 @@
+2022-10-09T20:21:57.6142727Z ##[group]Run make lint
+2022-10-09T20:21:57.6143498Z [36;1mmake lint[0m
+2022-10-09T20:21:57.6167802Z shell: /usr/bin/zsh {0}
+2022-10-09T20:21:57.6168379Z env:
+2022-10-09T20:21:57.6168890Z   TEST_TYPE: minimal
+2022-10-09T20:21:57.6169572Z   DEFAULT_BRANCH: dev
+2022-10-09T20:21:57.6170092Z ##[endgroup]
+2022-10-09T20:21:57.6410964Z . venv/bin/activate; python3 setup.py pyspecdev
+2022-10-09T20:21:57.6419201Z /bin/sh: 1: .: cannot open venv/bin/activate: No such file
+2022-10-09T20:21:57.6420398Z make: *** [Makefile:95: pyspec] Error 2
+2022-10-09T20:21:57.6454780Z ##[error]Process completed with exit code 2.

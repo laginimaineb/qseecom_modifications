@@ -1,0 +1,45 @@
+2022-10-09T20:27:41.1229067Z ##[group]Run make citest fork=phase0 TEST_TYPE=minimal
+2022-10-09T20:27:41.1230156Z [36;1mmake citest fork=phase0 TEST_TYPE=minimal[0m
+2022-10-09T20:27:41.1257635Z shell: /usr/bin/zsh {0}
+2022-10-09T20:27:41.1258311Z env:
+2022-10-09T20:27:41.1258950Z   TEST_TYPE: minimal
+2022-10-09T20:27:41.1259654Z   DEFAULT_BRANCH: dev
+2022-10-09T20:27:41.1260345Z   spec_test_type: minimal
+2022-10-09T20:27:41.1261046Z ##[endgroup]
+2022-10-09T20:27:41.1337810Z . venv/bin/activate; python3 setup.py pyspecdev
+2022-10-09T20:27:41.3230624Z running pyspecdev
+2022-10-09T20:27:41.3231443Z running build_py command
+2022-10-09T20:27:41.3232167Z running pyspec
+2022-10-09T20:27:41.7577209Z no paths were specified, using default markdown file paths for pyspec build (spec fork: phase0)
+2022-10-09T20:27:41.7578108Z running pyspec
+2022-10-09T20:27:42.5661446Z no paths were specified, using default markdown file paths for pyspec build (spec fork: altair)
+2022-10-09T20:27:42.5662350Z running pyspec
+2022-10-09T20:27:43.6271859Z no paths were specified, using default markdown file paths for pyspec build (spec fork: bellatrix)
+2022-10-09T20:27:43.6272886Z running pyspec
+2022-10-09T20:27:44.7787141Z no paths were specified, using default markdown file paths for pyspec build (spec fork: capella)
+2022-10-09T20:27:44.7789009Z running pyspec
+2022-10-09T20:27:46.0615229Z no paths were specified, using default markdown file paths for pyspec build (spec fork: eip4844)
+2022-10-09T20:27:46.0768910Z mkdir -p ./tests/core/pyspec/test-reports;
+2022-10-09T20:27:46.0797680Z . venv/bin/activate; cd ./tests/core/pyspec; \
+2022-10-09T20:27:46.0799042Z python3 -m pytest -n 4 --bls-type=milagro --fork=phase0 --junitxml=test-reports/test_results.xml eth2spec
+2022-10-09T20:27:57.0834875Z ============================= test session starts ==============================
+2022-10-09T20:27:57.0836129Z platform linux -- Python 3.9.2, pytest-7.1.3, pluggy-1.0.0
+2022-10-09T20:27:57.0837150Z rootdir: /home/devops/consensus-specs-02/consensus-specs-02/consensus-specs/consensus-specs
+2022-10-09T20:27:57.0838083Z plugins: forked-1.4.0, xdist-2.5.0, cov-4.0.0
+2022-10-09T20:27:57.0838631Z gw0 I / gw1 I / gw2 I / gw3 I
+2022-10-09T20:27:57.0839138Z gw0 [817] / gw1 [817] / gw2 [817] / gw3 [817]
+2022-10-09T20:27:57.0839469Z 
+2022-10-09T20:27:57.2682520Z sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss. [  8%]
+2022-10-09T20:28:17.1425023Z ...........sssssssssss.sssssssssss..sssssssssss..........ssssssssss..... [ 17%]
+2022-10-09T20:28:19.8641107Z ........ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss [ 26%]
+2022-10-09T20:28:23.3670386Z ssssssssssssssss........................................................ [ 35%]
+2022-10-09T20:28:24.6344095Z .......................................................sssssssssssssssss [ 44%]
+2022-10-09T20:28:25.9092165Z sssssssssssssssssssssssssssss.....................ssssssssssssssssssssss [ 52%]
+2022-10-09T20:28:26.0071606Z ssssssssssssssssssssssssss..sssssss.ssssssssssssssssssssssssssssssssssss [ 61%]
+2022-10-09T20:28:36.5308554Z sssss................................................................... [ 70%]
+2022-10-09T20:28:45.7804037Z ....................s...s..ssssssssssss.........................ssss.... [ 79%]
+2022-10-09T20:28:52.6903934Z ........................................................................ [ 88%]
+2022-10-09T20:28:54.7267632Z .sssss.................................................................. [ 96%]
+2022-10-09T20:30:07.7997516Z .........................                                                [100%]
+2022-10-09T20:30:07.8000857Z - generated xml file: /home/devops/consensus-specs-02/consensus-specs-02/consensus-specs/consensus-specs/tests/core/pyspec/test-reports/test_results.xml -
+2022-10-09T20:30:07.8001855Z ================= 458 passed, 359 skipped in 136.49s (0:02:16) =================

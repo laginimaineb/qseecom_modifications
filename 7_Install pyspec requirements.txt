@@ -1,0 +1,121 @@
+2022-10-09T20:22:30.6057781Z ##[group]Run make install_test
+2022-10-09T20:22:30.6058429Z [36;1mmake install_test[0m
+2022-10-09T20:22:30.6078641Z shell: /usr/bin/zsh {0}
+2022-10-09T20:22:30.6079289Z env:
+2022-10-09T20:22:30.6079786Z   TEST_TYPE: minimal
+2022-10-09T20:22:30.6080349Z   DEFAULT_BRANCH: dev
+2022-10-09T20:22:30.6080917Z   spec_test_type: minimal
+2022-10-09T20:22:30.6081541Z ##[endgroup]
+2022-10-09T20:22:30.6162190Z python3 -m venv venv; . venv/bin/activate; python3 -m pip install -e .[lint]; python3 -m pip install -e .[test]
+2022-10-09T20:22:33.0842343Z Obtaining file:///home/devops/consensus-specs-01/consensus-specs-01/consensus-specs/consensus-specs
+2022-10-09T20:22:36.2554882Z Collecting eth-typing<4.0.0,>=3.2.0
+2022-10-09T20:22:36.2568200Z   Using cached eth_typing-3.2.0-py3-none-any.whl (6.3 kB)
+2022-10-09T20:22:36.3015595Z Collecting eth-utils<3,>=2.0.0
+2022-10-09T20:22:36.3026415Z   Using cached eth_utils-2.0.0-py3-none-any.whl (24 kB)
+2022-10-09T20:22:36.3360298Z Collecting lru-dict==1.1.8
+2022-10-09T20:22:36.3371128Z   Using cached lru_dict-1.1.8-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (28 kB)
+2022-10-09T20:22:36.3804144Z Collecting marko==1.0.2
+2022-10-09T20:22:36.3815386Z   Using cached marko-1.0.2-py3-none-any.whl (34 kB)
+2022-10-09T20:22:36.4348114Z Collecting milagro_bls_binding==1.9.0
+2022-10-09T20:22:36.4386002Z   Using cached milagro_bls_binding-1.9.0-cp37-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.whl (1.2 MB)
+2022-10-09T20:22:36.4877912Z Collecting py_ecc==6.0.0
+2022-10-09T20:22:36.4889253Z   Using cached py_ecc-6.0.0-py3-none-any.whl (43 kB)
+2022-10-09T20:22:36.7528519Z Collecting pycryptodome==3.15.0
+2022-10-09T20:22:36.7585502Z   Using cached pycryptodome-3.15.0-cp35-abi3-manylinux2010_x86_64.whl (2.3 MB)
+2022-10-09T20:22:36.8390673Z Collecting remerkleable==0.1.24
+2022-10-09T20:22:36.8402388Z   Using cached remerkleable-0.1.24-py3-none-any.whl (43 kB)
+2022-10-09T20:22:37.3017273Z Collecting ruamel.yaml==0.17.21
+2022-10-09T20:22:37.3031292Z   Using cached ruamel.yaml-0.17.21-py3-none-any.whl (109 kB)
+2022-10-09T20:22:37.3593992Z Collecting flake8==5.0.4
+2022-10-09T20:22:37.3605532Z   Using cached flake8-5.0.4-py2.py3-none-any.whl (61 kB)
+2022-10-09T20:22:37.5573455Z Collecting mypy==0.981
+2022-10-09T20:22:37.5774599Z   Using cached mypy-0.981-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.7 MB)
+2022-10-09T20:22:37.7073464Z Collecting pylint==2.15.3
+2022-10-09T20:22:37.7088849Z   Using cached pylint-2.15.3-py3-none-any.whl (507 kB)
+2022-10-09T20:22:37.7475009Z Collecting pycodestyle<2.10.0,>=2.9.0
+2022-10-09T20:22:37.7486429Z   Using cached pycodestyle-2.9.1-py2.py3-none-any.whl (41 kB)
+2022-10-09T20:22:37.7861773Z Collecting pyflakes<2.6.0,>=2.5.0
+2022-10-09T20:22:37.7872895Z   Using cached pyflakes-2.5.0-py2.py3-none-any.whl (66 kB)
+2022-10-09T20:22:37.8105984Z Collecting mccabe<0.8.0,>=0.7.0
+2022-10-09T20:22:37.8116937Z   Using cached mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+2022-10-09T20:22:37.8622895Z Collecting typing-extensions>=3.10
+2022-10-09T20:22:37.8633545Z   Using cached typing_extensions-4.4.0-py3-none-any.whl (26 kB)
+2022-10-09T20:22:37.8848291Z Collecting mypy-extensions>=0.4.3
+2022-10-09T20:22:37.8858359Z   Using cached mypy_extensions-0.4.3-py2.py3-none-any.whl (4.5 kB)
+2022-10-09T20:22:37.9228530Z Collecting tomli>=1.1.0
+2022-10-09T20:22:37.9239711Z   Using cached tomli-2.0.1-py3-none-any.whl (12 kB)
+2022-10-09T20:22:37.9651186Z Collecting cached-property<2,>=1.5.1
+2022-10-09T20:22:37.9661605Z   Using cached cached_property-1.5.2-py2.py3-none-any.whl (7.6 kB)
+2022-10-09T20:22:38.1177306Z Collecting isort<6,>=4.2.5
+2022-10-09T20:22:38.1188273Z   Using cached isort-5.10.1-py3-none-any.whl (103 kB)
+2022-10-09T20:22:38.1742211Z Collecting tomlkit>=0.10.1
+2022-10-09T20:22:38.1753921Z   Using cached tomlkit-0.11.5-py3-none-any.whl (35 kB)
+2022-10-09T20:22:38.2063778Z Collecting dill>=0.2
+2022-10-09T20:22:38.2075124Z   Using cached dill-0.3.5.1-py2.py3-none-any.whl (95 kB)
+2022-10-09T20:22:38.2955090Z Collecting astroid<=2.14.0-dev0,>=2.12.10
+2022-10-09T20:22:38.2967557Z   Using cached astroid-2.12.10-py3-none-any.whl (263 kB)
+2022-10-09T20:22:38.3326114Z Collecting platformdirs>=2.2.0
+2022-10-09T20:22:38.3337237Z   Using cached platformdirs-2.5.2-py3-none-any.whl (14 kB)
+2022-10-09T20:22:38.4219059Z Collecting ruamel.yaml.clib>=0.2.6
+2022-10-09T20:22:38.4235798Z   Using cached ruamel.yaml.clib-0.2.6-cp39-cp39-manylinux1_x86_64.whl (539 kB)
+2022-10-09T20:22:38.6111954Z Collecting wrapt<2,>=1.11
+2022-10-09T20:22:38.6125239Z   Using cached wrapt-1.14.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (77 kB)
+2022-10-09T20:22:38.7099650Z Collecting lazy-object-proxy>=1.4.0
+2022-10-09T20:22:38.7111195Z   Using cached lazy_object_proxy-1.7.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (61 kB)
+2022-10-09T20:22:38.8132199Z Collecting eth-hash<0.4.0,>=0.3.1
+2022-10-09T20:22:38.8143290Z   Using cached eth_hash-0.3.3-py3-none-any.whl (8.9 kB)
+2022-10-09T20:22:38.8685838Z Collecting cytoolz<1.0.0,>=0.10.1
+2022-10-09T20:22:38.8727706Z   Using cached cytoolz-0.12.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.8 MB)
+2022-10-09T20:22:38.9097172Z Collecting toolz>=0.8.0
+2022-10-09T20:22:38.9108844Z   Using cached toolz-0.12.0-py3-none-any.whl (55 kB)
+2022-10-09T20:22:39.1211598Z Installing collected packages: toolz, eth-typing, eth-hash, cytoolz, wrapt, typing-extensions, ruamel.yaml.clib, mypy-extensions, lazy-object-proxy, eth-utils, cached-property, tomlkit, tomli, ruamel.yaml, remerkleable, pyflakes, pycryptodome, pycodestyle, py-ecc, platformdirs, milagro-bls-binding, mccabe, marko, lru-dict, isort, dill, astroid, pylint, mypy, flake8, eth2spec
+2022-10-09T20:22:41.2687041Z   Running setup.py develop for eth2spec
+2022-10-09T20:22:41.5314394Z Successfully installed astroid-2.12.10 cached-property-1.5.2 cytoolz-0.12.0 dill-0.3.5.1 eth-hash-0.3.3 eth-typing-3.2.0 eth-utils-2.0.0 eth2spec flake8-5.0.4 isort-5.10.1 lazy-object-proxy-1.7.1 lru-dict-1.1.8 marko-1.0.2 mccabe-0.7.0 milagro-bls-binding-1.9.0 mypy-0.981 mypy-extensions-0.4.3 platformdirs-2.5.2 py-ecc-6.0.0 pycodestyle-2.9.1 pycryptodome-3.15.0 pyflakes-2.5.0 pylint-2.15.3 remerkleable-0.1.24 ruamel.yaml-0.17.21 ruamel.yaml.clib-0.2.6 tomli-2.0.1 tomlkit-0.11.5 toolz-0.12.0 typing-extensions-4.4.0 wrapt-1.14.1
+2022-10-09T20:22:42.5391745Z Obtaining file:///home/devops/consensus-specs-01/consensus-specs-01/consensus-specs/consensus-specs
+2022-10-09T20:22:42.7676276Z Requirement already satisfied: eth-typing<4.0.0,>=3.2.0 in ./venv/lib/python3.9/site-packages (from eth2spec==1.2.0) (3.2.0)
+2022-10-09T20:22:42.7690091Z Requirement already satisfied: eth-utils<3,>=2.0.0 in ./venv/lib/python3.9/site-packages (from eth2spec==1.2.0) (2.0.0)
+2022-10-09T20:22:42.7699246Z Requirement already satisfied: lru-dict==1.1.8 in ./venv/lib/python3.9/site-packages (from eth2spec==1.2.0) (1.1.8)
+2022-10-09T20:22:42.7707824Z Requirement already satisfied: marko==1.0.2 in ./venv/lib/python3.9/site-packages (from eth2spec==1.2.0) (1.0.2)
+2022-10-09T20:22:42.7717589Z Requirement already satisfied: milagro_bls_binding==1.9.0 in ./venv/lib/python3.9/site-packages (from eth2spec==1.2.0) (1.9.0)
+2022-10-09T20:22:42.7740597Z Requirement already satisfied: py_ecc==6.0.0 in ./venv/lib/python3.9/site-packages (from eth2spec==1.2.0) (6.0.0)
+2022-10-09T20:22:42.7749313Z Requirement already satisfied: pycryptodome==3.15.0 in ./venv/lib/python3.9/site-packages (from eth2spec==1.2.0) (3.15.0)
+2022-10-09T20:22:42.7758146Z Requirement already satisfied: remerkleable==0.1.24 in ./venv/lib/python3.9/site-packages (from eth2spec==1.2.0) (0.1.24)
+2022-10-09T20:22:42.7767182Z Requirement already satisfied: ruamel.yaml==0.17.21 in ./venv/lib/python3.9/site-packages (from eth2spec==1.2.0) (0.17.21)
+2022-10-09T20:22:42.9337734Z Collecting pytest-cov
+2022-10-09T20:22:42.9351876Z   Using cached pytest_cov-4.0.0-py3-none-any.whl (21 kB)
+2022-10-09T20:22:43.0174429Z Collecting pytest-xdist
+2022-10-09T20:22:43.0184743Z   Using cached pytest_xdist-2.5.0-py3-none-any.whl (41 kB)
+2022-10-09T20:22:43.1656984Z Collecting pytest>=4.4
+2022-10-09T20:22:43.1674248Z   Using cached pytest-7.1.3-py3-none-any.whl (298 kB)
+2022-10-09T20:22:43.1922392Z Requirement already satisfied: cached-property<2,>=1.5.1 in ./venv/lib/python3.9/site-packages (from py_ecc==6.0.0->eth2spec==1.2.0) (1.5.2)
+2022-10-09T20:22:43.1926470Z Requirement already satisfied: mypy-extensions>=0.4.1 in ./venv/lib/python3.9/site-packages (from py_ecc==6.0.0->eth2spec==1.2.0) (0.4.3)
+2022-10-09T20:22:43.2026697Z Requirement already satisfied: ruamel.yaml.clib>=0.2.6 in ./venv/lib/python3.9/site-packages (from ruamel.yaml==0.17.21->eth2spec==1.2.0) (0.2.6)
+2022-10-09T20:22:43.2430365Z Requirement already satisfied: cytoolz<1.0.0,>=0.10.1 in ./venv/lib/python3.9/site-packages (from eth-utils<3,>=2.0.0->eth2spec==1.2.0) (0.12.0)
+2022-10-09T20:22:43.2436923Z Requirement already satisfied: eth-hash<0.4.0,>=0.3.1 in ./venv/lib/python3.9/site-packages (from eth-utils<3,>=2.0.0->eth2spec==1.2.0) (0.3.3)
+2022-10-09T20:22:43.2465140Z Requirement already satisfied: toolz>=0.8.0 in ./venv/lib/python3.9/site-packages (from cytoolz<1.0.0,>=0.10.1->eth-utils<3,>=2.0.0->eth2spec==1.2.0) (0.12.0)
+2022-10-09T20:22:43.3176192Z Collecting attrs>=19.2.0
+2022-10-09T20:22:43.3187410Z   Using cached attrs-22.1.0-py2.py3-none-any.whl (58 kB)
+2022-10-09T20:22:43.3201864Z Requirement already satisfied: tomli>=1.0.0 in ./venv/lib/python3.9/site-packages (from pytest>=4.4->eth2spec==1.2.0) (2.0.1)
+2022-10-09T20:22:43.3417178Z Collecting iniconfig
+2022-10-09T20:22:43.3427714Z   Using cached iniconfig-1.1.1-py2.py3-none-any.whl (5.0 kB)
+2022-10-09T20:22:43.4368808Z Collecting py>=1.8.2
+2022-10-09T20:22:43.4379903Z   Using cached py-1.11.0-py2.py3-none-any.whl (98 kB)
+2022-10-09T20:22:43.5171377Z Collecting packaging
+2022-10-09T20:22:43.5181748Z   Using cached packaging-21.3-py3-none-any.whl (40 kB)
+2022-10-09T20:22:43.6407274Z Collecting pluggy<2.0,>=0.12
+2022-10-09T20:22:43.6429298Z   Using cached pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
+2022-10-09T20:22:43.7880751Z Collecting pyparsing!=3.0.5,>=2.0.2
+2022-10-09T20:22:43.7891618Z   Using cached pyparsing-3.0.9-py3-none-any.whl (98 kB)
+2022-10-09T20:22:44.3792695Z Collecting coverage[toml]>=5.2.1
+2022-10-09T20:22:44.3809618Z   Using cached coverage-6.5.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (212 kB)
+2022-10-09T20:22:44.4888633Z Collecting execnet>=1.1
+2022-10-09T20:22:44.4899624Z   Using cached execnet-1.9.0-py2.py3-none-any.whl (39 kB)
+2022-10-09T20:22:44.5437295Z Collecting pytest-forked
+2022-10-09T20:22:44.5447623Z   Using cached pytest_forked-1.4.0-py3-none-any.whl (4.9 kB)
+2022-10-09T20:22:44.6731831Z Installing collected packages: pyparsing, py, pluggy, packaging, iniconfig, attrs, pytest, coverage, pytest-forked, execnet, pytest-xdist, pytest-cov, eth2spec
+2022-10-09T20:22:45.0926126Z   Attempting uninstall: eth2spec
+2022-10-09T20:22:45.0928297Z     Found existing installation: eth2spec 1.2.0
+2022-10-09T20:22:45.0938976Z     Uninstalling eth2spec-1.2.0:
+2022-10-09T20:22:45.1098395Z       Successfully uninstalled eth2spec-1.2.0
+2022-10-09T20:22:45.1101441Z   Running setup.py develop for eth2spec
+2022-10-09T20:22:45.3807186Z Successfully installed attrs-22.1.0 coverage-6.5.0 eth2spec execnet-1.9.0 iniconfig-1.1.1 packaging-21.3 pluggy-1.0.0 py-1.11.0 pyparsing-3.0.9 pytest-7.1.3 pytest-cov-4.0.0 pytest-forked-1.4.0 pytest-xdist-2.5.0

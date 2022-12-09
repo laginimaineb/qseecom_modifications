@@ -1,0 +1,249 @@
+2022-10-09T20:21:49.9629518Z Requested labels: self-hosted
+2022-10-09T20:21:49.9629577Z Job defined at: ethereum/consensus-specs/.github/workflows/run-tests.yml@refs/pull/3028/merge
+2022-10-09T20:21:49.9629595Z Waiting for a runner to pick up this job...
+2022-10-09T20:22:23.8441988Z Job is about to start running on the runner: github-actions-runner-01-01 (repository)
+2022-10-09T20:22:27.1029888Z Current runner version: '2.298.2'
+2022-10-09T20:22:27.1035674Z Runner name: 'github-actions-runner-01-01'
+2022-10-09T20:22:27.1036375Z Runner group name: 'Default'
+2022-10-09T20:22:27.1037098Z Machine name: 'github-actions-runner-01'
+2022-10-09T20:22:27.1039233Z ##[group]GITHUB_TOKEN Permissions
+2022-10-09T20:22:27.1039998Z Actions: read
+2022-10-09T20:22:27.1040349Z Checks: read
+2022-10-09T20:22:27.1040652Z Contents: read
+2022-10-09T20:22:27.1041006Z Deployments: read
+2022-10-09T20:22:27.1041380Z Discussions: read
+2022-10-09T20:22:27.1041692Z Issues: read
+2022-10-09T20:22:27.1042023Z Metadata: read
+2022-10-09T20:22:27.1042359Z Packages: read
+2022-10-09T20:22:27.1042662Z Pages: read
+2022-10-09T20:22:27.1043027Z PullRequests: read
+2022-10-09T20:22:27.1043419Z RepositoryProjects: read
+2022-10-09T20:22:27.1043774Z SecurityEvents: read
+2022-10-09T20:22:27.1044119Z Statuses: read
+2022-10-09T20:22:27.1044568Z ##[endgroup]
+2022-10-09T20:22:27.1047540Z Secret source: None
+2022-10-09T20:22:27.1048193Z Prepare workflow directory
+2022-10-09T20:22:27.2036988Z Prepare all required actions
+2022-10-09T20:22:27.2222428Z Getting action download info
+2022-10-09T20:22:27.4668073Z Download action repository 'actions/cache@v2' (SHA:937d24475381cd9c75ae6db12cb4e79714b926ed)
+2022-10-09T20:22:28.0608112Z Download action repository 'actions/upload-artifact@v2' (SHA:82c141cc518b40d92cc801eee768e7aafc9c2fa2)
+2022-10-09T20:22:28.6979881Z ##[group]Run actions/cache@v2
+2022-10-09T20:22:28.6980207Z with:
+2022-10-09T20:22:28.6980458Z   path: ./*
+2022-10-09T20:22:28.6980765Z   key: 60daa32ca6be600ef610cfd1ac62abb92a07de36
+2022-10-09T20:22:28.6981181Z env:
+2022-10-09T20:22:28.6981452Z   TEST_TYPE: minimal
+2022-10-09T20:22:28.6981702Z   DEFAULT_BRANCH: dev
+2022-10-09T20:22:28.6981986Z ##[endgroup]
+2022-10-09T20:22:30.4584035Z Received 1020557 of 1020557 (100.0%), 1.5 MBs/sec
+2022-10-09T20:22:30.4587105Z Cache Size: ~1 MB (1020557 B)
+2022-10-09T20:22:30.4620707Z [command]/usr/bin/tar -z -xf /home/devops/consensus-specs-01/consensus-specs-01/_temp/d6f6d237-1b76-4487-bf84-5ce854e1d655/cache.tgz -P -C /home/devops/consensus-specs-01/consensus-specs-01/consensus-specs/consensus-specs
+2022-10-09T20:22:30.5129012Z Cache restored successfully
+2022-10-09T20:22:30.5145793Z 
+2022-10-09T20:22:30.5184845Z Cache restored from key: 60daa32ca6be600ef610cfd1ac62abb92a07de36
+2022-10-09T20:22:30.5737803Z ##[group]Run echo "spec_test_type=minimal" >> $GITHUB_ENV    
+2022-10-09T20:22:30.5738674Z [36;1mecho "spec_test_type=minimal" >> $GITHUB_ENV    [0m
+2022-10-09T20:22:30.5762926Z shell: /usr/bin/zsh {0}
+2022-10-09T20:22:30.5763617Z env:
+2022-10-09T20:22:30.5764123Z   TEST_TYPE: minimal
+2022-10-09T20:22:30.5764704Z   DEFAULT_BRANCH: dev
+2022-10-09T20:22:30.5765272Z ##[endgroup]
+2022-10-09T20:22:30.6057828Z ##[group]Run make install_test
+2022-10-09T20:22:30.6058448Z [36;1mmake install_test[0m
+2022-10-09T20:22:30.6078665Z shell: /usr/bin/zsh {0}
+2022-10-09T20:22:30.6079313Z env:
+2022-10-09T20:22:30.6079809Z   TEST_TYPE: minimal
+2022-10-09T20:22:30.6080368Z   DEFAULT_BRANCH: dev
+2022-10-09T20:22:30.6080940Z   spec_test_type: minimal
+2022-10-09T20:22:30.6081566Z ##[endgroup]
+2022-10-09T20:22:30.6162232Z python3 -m venv venv; . venv/bin/activate; python3 -m pip install -e .[lint]; python3 -m pip install -e .[test]
+2022-10-09T20:22:33.0842409Z Obtaining file:///home/devops/consensus-specs-01/consensus-specs-01/consensus-specs/consensus-specs
+2022-10-09T20:22:36.2554952Z Collecting eth-typing<4.0.0,>=3.2.0
+2022-10-09T20:22:36.2568238Z   Using cached eth_typing-3.2.0-py3-none-any.whl (6.3 kB)
+2022-10-09T20:22:36.3015642Z Collecting eth-utils<3,>=2.0.0
+2022-10-09T20:22:36.3026454Z   Using cached eth_utils-2.0.0-py3-none-any.whl (24 kB)
+2022-10-09T20:22:36.3360539Z Collecting lru-dict==1.1.8
+2022-10-09T20:22:36.3371147Z   Using cached lru_dict-1.1.8-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (28 kB)
+2022-10-09T20:22:36.3804187Z Collecting marko==1.0.2
+2022-10-09T20:22:36.3815425Z   Using cached marko-1.0.2-py3-none-any.whl (34 kB)
+2022-10-09T20:22:36.4348142Z Collecting milagro_bls_binding==1.9.0
+2022-10-09T20:22:36.4386053Z   Using cached milagro_bls_binding-1.9.0-cp37-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.whl (1.2 MB)
+2022-10-09T20:22:36.4877955Z Collecting py_ecc==6.0.0
+2022-10-09T20:22:36.4889295Z   Using cached py_ecc-6.0.0-py3-none-any.whl (43 kB)
+2022-10-09T20:22:36.7528557Z Collecting pycryptodome==3.15.0
+2022-10-09T20:22:36.7585545Z   Using cached pycryptodome-3.15.0-cp35-abi3-manylinux2010_x86_64.whl (2.3 MB)
+2022-10-09T20:22:36.8390710Z Collecting remerkleable==0.1.24
+2022-10-09T20:22:36.8402429Z   Using cached remerkleable-0.1.24-py3-none-any.whl (43 kB)
+2022-10-09T20:22:37.3017317Z Collecting ruamel.yaml==0.17.21
+2022-10-09T20:22:37.3031335Z   Using cached ruamel.yaml-0.17.21-py3-none-any.whl (109 kB)
+2022-10-09T20:22:37.3594021Z Collecting flake8==5.0.4
+2022-10-09T20:22:37.3605569Z   Using cached flake8-5.0.4-py2.py3-none-any.whl (61 kB)
+2022-10-09T20:22:37.5573492Z Collecting mypy==0.981
+2022-10-09T20:22:37.5774646Z   Using cached mypy-0.981-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.7 MB)
+2022-10-09T20:22:37.7073502Z Collecting pylint==2.15.3
+2022-10-09T20:22:37.7088888Z   Using cached pylint-2.15.3-py3-none-any.whl (507 kB)
+2022-10-09T20:22:37.7475046Z Collecting pycodestyle<2.10.0,>=2.9.0
+2022-10-09T20:22:37.7486472Z   Using cached pycodestyle-2.9.1-py2.py3-none-any.whl (41 kB)
+2022-10-09T20:22:37.7861815Z Collecting pyflakes<2.6.0,>=2.5.0
+2022-10-09T20:22:37.7872933Z   Using cached pyflakes-2.5.0-py2.py3-none-any.whl (66 kB)
+2022-10-09T20:22:37.8106027Z Collecting mccabe<0.8.0,>=0.7.0
+2022-10-09T20:22:37.8116979Z   Using cached mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+2022-10-09T20:22:37.8622951Z Collecting typing-extensions>=3.10
+2022-10-09T20:22:37.8633592Z   Using cached typing_extensions-4.4.0-py3-none-any.whl (26 kB)
+2022-10-09T20:22:37.8848315Z Collecting mypy-extensions>=0.4.3
+2022-10-09T20:22:37.8858383Z   Using cached mypy_extensions-0.4.3-py2.py3-none-any.whl (4.5 kB)
+2022-10-09T20:22:37.9228554Z Collecting tomli>=1.1.0
+2022-10-09T20:22:37.9239748Z   Using cached tomli-2.0.1-py3-none-any.whl (12 kB)
+2022-10-09T20:22:37.9651224Z Collecting cached-property<2,>=1.5.1
+2022-10-09T20:22:37.9661642Z   Using cached cached_property-1.5.2-py2.py3-none-any.whl (7.6 kB)
+2022-10-09T20:22:38.1177368Z Collecting isort<6,>=4.2.5
+2022-10-09T20:22:38.1188307Z   Using cached isort-5.10.1-py3-none-any.whl (103 kB)
+2022-10-09T20:22:38.1742239Z Collecting tomlkit>=0.10.1
+2022-10-09T20:22:38.1753963Z   Using cached tomlkit-0.11.5-py3-none-any.whl (35 kB)
+2022-10-09T20:22:38.2063821Z Collecting dill>=0.2
+2022-10-09T20:22:38.2075162Z   Using cached dill-0.3.5.1-py2.py3-none-any.whl (95 kB)
+2022-10-09T20:22:38.2955516Z Collecting astroid<=2.14.0-dev0,>=2.12.10
+2022-10-09T20:22:38.2967595Z   Using cached astroid-2.12.10-py3-none-any.whl (263 kB)
+2022-10-09T20:22:38.3326161Z Collecting platformdirs>=2.2.0
+2022-10-09T20:22:38.3337266Z   Using cached platformdirs-2.5.2-py3-none-any.whl (14 kB)
+2022-10-09T20:22:38.4219110Z Collecting ruamel.yaml.clib>=0.2.6
+2022-10-09T20:22:38.4235817Z   Using cached ruamel.yaml.clib-0.2.6-cp39-cp39-manylinux1_x86_64.whl (539 kB)
+2022-10-09T20:22:38.6112005Z Collecting wrapt<2,>=1.11
+2022-10-09T20:22:38.6125310Z   Using cached wrapt-1.14.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (77 kB)
+2022-10-09T20:22:38.7099693Z Collecting lazy-object-proxy>=1.4.0
+2022-10-09T20:22:38.7111237Z   Using cached lazy_object_proxy-1.7.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (61 kB)
+2022-10-09T20:22:38.8132251Z Collecting eth-hash<0.4.0,>=0.3.1
+2022-10-09T20:22:38.8143351Z   Using cached eth_hash-0.3.3-py3-none-any.whl (8.9 kB)
+2022-10-09T20:22:38.8685872Z Collecting cytoolz<1.0.0,>=0.10.1
+2022-10-09T20:22:38.8727748Z   Using cached cytoolz-0.12.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.8 MB)
+2022-10-09T20:22:38.9097205Z Collecting toolz>=0.8.0
+2022-10-09T20:22:38.9108882Z   Using cached toolz-0.12.0-py3-none-any.whl (55 kB)
+2022-10-09T20:22:39.1211640Z Installing collected packages: toolz, eth-typing, eth-hash, cytoolz, wrapt, typing-extensions, ruamel.yaml.clib, mypy-extensions, lazy-object-proxy, eth-utils, cached-property, tomlkit, tomli, ruamel.yaml, remerkleable, pyflakes, pycryptodome, pycodestyle, py-ecc, platformdirs, milagro-bls-binding, mccabe, marko, lru-dict, isort, dill, astroid, pylint, mypy, flake8, eth2spec
+2022-10-09T20:22:41.2687088Z   Running setup.py develop for eth2spec
+2022-10-09T20:22:41.5314446Z Successfully installed astroid-2.12.10 cached-property-1.5.2 cytoolz-0.12.0 dill-0.3.5.1 eth-hash-0.3.3 eth-typing-3.2.0 eth-utils-2.0.0 eth2spec flake8-5.0.4 isort-5.10.1 lazy-object-proxy-1.7.1 lru-dict-1.1.8 marko-1.0.2 mccabe-0.7.0 milagro-bls-binding-1.9.0 mypy-0.981 mypy-extensions-0.4.3 platformdirs-2.5.2 py-ecc-6.0.0 pycodestyle-2.9.1 pycryptodome-3.15.0 pyflakes-2.5.0 pylint-2.15.3 remerkleable-0.1.24 ruamel.yaml-0.17.21 ruamel.yaml.clib-0.2.6 tomli-2.0.1 tomlkit-0.11.5 toolz-0.12.0 typing-extensions-4.4.0 wrapt-1.14.1
+2022-10-09T20:22:42.5391786Z Obtaining file:///home/devops/consensus-specs-01/consensus-specs-01/consensus-specs/consensus-specs
+2022-10-09T20:22:42.7676342Z Requirement already satisfied: eth-typing<4.0.0,>=3.2.0 in ./venv/lib/python3.9/site-packages (from eth2spec==1.2.0) (3.2.0)
+2022-10-09T20:22:42.7690139Z Requirement already satisfied: eth-utils<3,>=2.0.0 in ./venv/lib/python3.9/site-packages (from eth2spec==1.2.0) (2.0.0)
+2022-10-09T20:22:42.7699322Z Requirement already satisfied: lru-dict==1.1.8 in ./venv/lib/python3.9/site-packages (from eth2spec==1.2.0) (1.1.8)
+2022-10-09T20:22:42.7707895Z Requirement already satisfied: marko==1.0.2 in ./venv/lib/python3.9/site-packages (from eth2spec==1.2.0) (1.0.2)
+2022-10-09T20:22:42.7717628Z Requirement already satisfied: milagro_bls_binding==1.9.0 in ./venv/lib/python3.9/site-packages (from eth2spec==1.2.0) (1.9.0)
+2022-10-09T20:22:42.7740636Z Requirement already satisfied: py_ecc==6.0.0 in ./venv/lib/python3.9/site-packages (from eth2spec==1.2.0) (6.0.0)
+2022-10-09T20:22:42.7749355Z Requirement already satisfied: pycryptodome==3.15.0 in ./venv/lib/python3.9/site-packages (from eth2spec==1.2.0) (3.15.0)
+2022-10-09T20:22:42.7758188Z Requirement already satisfied: remerkleable==0.1.24 in ./venv/lib/python3.9/site-packages (from eth2spec==1.2.0) (0.1.24)
+2022-10-09T20:22:42.7767216Z Requirement already satisfied: ruamel.yaml==0.17.21 in ./venv/lib/python3.9/site-packages (from eth2spec==1.2.0) (0.17.21)
+2022-10-09T20:22:42.9337791Z Collecting pytest-cov
+2022-10-09T20:22:42.9351918Z   Using cached pytest_cov-4.0.0-py3-none-any.whl (21 kB)
+2022-10-09T20:22:43.0174490Z Collecting pytest-xdist
+2022-10-09T20:22:43.0185003Z   Using cached pytest_xdist-2.5.0-py3-none-any.whl (41 kB)
+2022-10-09T20:22:43.1657017Z Collecting pytest>=4.4
+2022-10-09T20:22:43.1674300Z   Using cached pytest-7.1.3-py3-none-any.whl (298 kB)
+2022-10-09T20:22:43.1922435Z Requirement already satisfied: cached-property<2,>=1.5.1 in ./venv/lib/python3.9/site-packages (from py_ecc==6.0.0->eth2spec==1.2.0) (1.5.2)
+2022-10-09T20:22:43.1926513Z Requirement already satisfied: mypy-extensions>=0.4.1 in ./venv/lib/python3.9/site-packages (from py_ecc==6.0.0->eth2spec==1.2.0) (0.4.3)
+2022-10-09T20:22:43.2026739Z Requirement already satisfied: ruamel.yaml.clib>=0.2.6 in ./venv/lib/python3.9/site-packages (from ruamel.yaml==0.17.21->eth2spec==1.2.0) (0.2.6)
+2022-10-09T20:22:43.2430441Z Requirement already satisfied: cytoolz<1.0.0,>=0.10.1 in ./venv/lib/python3.9/site-packages (from eth-utils<3,>=2.0.0->eth2spec==1.2.0) (0.12.0)
+2022-10-09T20:22:43.2436980Z Requirement already satisfied: eth-hash<0.4.0,>=0.3.1 in ./venv/lib/python3.9/site-packages (from eth-utils<3,>=2.0.0->eth2spec==1.2.0) (0.3.3)
+2022-10-09T20:22:43.2465183Z Requirement already satisfied: toolz>=0.8.0 in ./venv/lib/python3.9/site-packages (from cytoolz<1.0.0,>=0.10.1->eth-utils<3,>=2.0.0->eth2spec==1.2.0) (0.12.0)
+2022-10-09T20:22:43.3176235Z Collecting attrs>=19.2.0
+2022-10-09T20:22:43.3187452Z   Using cached attrs-22.1.0-py2.py3-none-any.whl (58 kB)
+2022-10-09T20:22:43.3201911Z Requirement already satisfied: tomli>=1.0.0 in ./venv/lib/python3.9/site-packages (from pytest>=4.4->eth2spec==1.2.0) (2.0.1)
+2022-10-09T20:22:43.3417215Z Collecting iniconfig
+2022-10-09T20:22:43.3427752Z   Using cached iniconfig-1.1.1-py2.py3-none-any.whl (5.0 kB)
+2022-10-09T20:22:43.4368852Z Collecting py>=1.8.2
+2022-10-09T20:22:43.4379945Z   Using cached py-1.11.0-py2.py3-none-any.whl (98 kB)
+2022-10-09T20:22:43.5171410Z Collecting packaging
+2022-10-09T20:22:43.5181776Z   Using cached packaging-21.3-py3-none-any.whl (40 kB)
+2022-10-09T20:22:43.6407307Z Collecting pluggy<2.0,>=0.12
+2022-10-09T20:22:43.6429331Z   Using cached pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
+2022-10-09T20:22:43.7880783Z Collecting pyparsing!=3.0.5,>=2.0.2
+2022-10-09T20:22:43.7891646Z   Using cached pyparsing-3.0.9-py3-none-any.whl (98 kB)
+2022-10-09T20:22:44.3792723Z Collecting coverage[toml]>=5.2.1
+2022-10-09T20:22:44.3809657Z   Using cached coverage-6.5.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (212 kB)
+2022-10-09T20:22:44.4888695Z Collecting execnet>=1.1
+2022-10-09T20:22:44.4899661Z   Using cached execnet-1.9.0-py2.py3-none-any.whl (39 kB)
+2022-10-09T20:22:44.5437338Z Collecting pytest-forked
+2022-10-09T20:22:44.5447661Z   Using cached pytest_forked-1.4.0-py3-none-any.whl (4.9 kB)
+2022-10-09T20:22:44.6731893Z Installing collected packages: pyparsing, py, pluggy, packaging, iniconfig, attrs, pytest, coverage, pytest-forked, execnet, pytest-xdist, pytest-cov, eth2spec
+2022-10-09T20:22:45.0926188Z   Attempting uninstall: eth2spec
+2022-10-09T20:22:45.0928350Z     Found existing installation: eth2spec 1.2.0
+2022-10-09T20:22:45.0938999Z     Uninstalling eth2spec-1.2.0:
+2022-10-09T20:22:45.1098423Z       Successfully uninstalled eth2spec-1.2.0
+2022-10-09T20:22:45.1101465Z   Running setup.py develop for eth2spec
+2022-10-09T20:22:45.3807210Z Successfully installed attrs-22.1.0 coverage-6.5.0 eth2spec execnet-1.9.0 iniconfig-1.1.1 packaging-21.3 pluggy-1.0.0 py-1.11.0 pyparsing-3.0.9 pytest-7.1.3 pytest-cov-4.0.0 pytest-forked-1.4.0 pytest-xdist-2.5.0
+2022-10-09T20:22:45.4768019Z ##[group]Run make citest fork=capella TEST_TYPE=minimal
+2022-10-09T20:22:45.4768535Z [36;1mmake citest fork=capella TEST_TYPE=minimal[0m
+2022-10-09T20:22:45.4783036Z shell: /usr/bin/zsh {0}
+2022-10-09T20:22:45.4783367Z env:
+2022-10-09T20:22:45.4783699Z   TEST_TYPE: minimal
+2022-10-09T20:22:45.4784030Z   DEFAULT_BRANCH: dev
+2022-10-09T20:22:45.4784384Z   spec_test_type: minimal
+2022-10-09T20:22:45.4784739Z ##[endgroup]
+2022-10-09T20:22:45.4861055Z . venv/bin/activate; python3 setup.py pyspecdev
+2022-10-09T20:22:45.6703211Z running pyspecdev
+2022-10-09T20:22:45.6703694Z running build_py command
+2022-10-09T20:22:45.6704049Z running pyspec
+2022-10-09T20:22:45.6705464Z no paths were specified, using default markdown file paths for pyspec build (spec fork: phase0)
+2022-10-09T20:22:45.6705965Z creating tests/core/pyspec/eth2spec/phase0
+2022-10-09T20:22:46.1003935Z running pyspec
+2022-10-09T20:22:46.1006575Z no paths were specified, using default markdown file paths for pyspec build (spec fork: altair)
+2022-10-09T20:22:46.1007152Z creating tests/core/pyspec/eth2spec/altair
+2022-10-09T20:22:46.9054326Z running pyspec
+2022-10-09T20:22:46.9056450Z no paths were specified, using default markdown file paths for pyspec build (spec fork: bellatrix)
+2022-10-09T20:22:46.9057245Z creating tests/core/pyspec/eth2spec/bellatrix
+2022-10-09T20:22:47.9663316Z running pyspec
+2022-10-09T20:22:47.9665435Z no paths were specified, using default markdown file paths for pyspec build (spec fork: capella)
+2022-10-09T20:22:47.9666173Z creating tests/core/pyspec/eth2spec/capella
+2022-10-09T20:22:49.1165755Z running pyspec
+2022-10-09T20:22:49.1167454Z no paths were specified, using default markdown file paths for pyspec build (spec fork: eip4844)
+2022-10-09T20:22:49.1168192Z creating tests/core/pyspec/eth2spec/eip4844
+2022-10-09T20:22:50.3565971Z mkdir -p ./tests/core/pyspec/test-reports;
+2022-10-09T20:22:50.3590828Z . venv/bin/activate; cd ./tests/core/pyspec; \
+2022-10-09T20:22:50.3592040Z python3 -m pytest -n 4 --bls-type=milagro --fork=capella --junitxml=test-reports/test_results.xml eth2spec
+2022-10-09T20:23:04.9836786Z ============================= test session starts ==============================
+2022-10-09T20:23:04.9837883Z platform linux -- Python 3.9.2, pytest-7.1.3, pluggy-1.0.0
+2022-10-09T20:23:04.9838834Z rootdir: /home/devops/consensus-specs-01/consensus-specs-01/consensus-specs/consensus-specs
+2022-10-09T20:23:04.9839658Z plugins: forked-1.4.0, xdist-2.5.0, cov-4.0.0
+2022-10-09T20:23:04.9840140Z gw0 I / gw1 I / gw2 I / gw3 I
+2022-10-09T20:23:04.9956192Z gw0 [817] / gw1 [817] / gw2 [817] / gw3 [817]
+2022-10-09T20:23:05.0074856Z 
+2022-10-09T20:23:33.1832123Z ..s....s...s....s....s........ss...ss...........................ssss.... [  8%]
+2022-10-09T20:23:51.3444635Z ssss....ssss.ssss..ssss...............s........sss...................... [ 17%]
+2022-10-09T20:23:57.3718711Z .............ssssssssssssssssssssssssssssss...............ssss.......... [ 26%]
+2022-10-09T20:24:00.7061609Z ........................................................................ [ 35%]
+2022-10-09T20:24:07.4620416Z ...................................................s.............sssssss [ 44%]
+2022-10-09T20:24:21.2977474Z ssssssssssss.....sssssssssssss..ssss..............ssss...........s...... [ 52%]
+2022-10-09T20:24:37.1538445Z .........................s.............................................. [ 61%]
+2022-10-09T20:24:46.9276370Z .ssssssssssssssssssssssssss.......sss..s....s..........ssssssssss....... [ 70%]
+2022-10-09T20:25:00.9075516Z .....sssssss......s.........s.ssssss..s........................ss....... [ 79%]
+2022-10-09T20:25:21.8434634Z ssss.................................................................... [ 88%]
+2022-10-09T20:25:22.0065231Z ........s..sssss........................................................ [ 96%]
+2022-10-09T20:27:48.3216758Z .........................                                                [100%]
+2022-10-09T20:27:48.3220718Z - generated xml file: /home/devops/consensus-specs-01/consensus-specs-01/consensus-specs/consensus-specs/tests/core/pyspec/test-reports/test_results.xml -
+2022-10-09T20:27:48.3221465Z ================= 638 passed, 179 skipped in 292.63s (0:04:52) =================
+2022-10-09T20:27:48.4234394Z ##[group]Run actions/upload-artifact@v2
+2022-10-09T20:27:48.4234934Z with:
+2022-10-09T20:27:48.4235373Z   name: test-capella
+2022-10-09T20:27:48.4235903Z   path: tests/core/pyspec/test-reports
+2022-10-09T20:27:48.4236471Z   if-no-files-found: warn
+2022-10-09T20:27:48.4236939Z env:
+2022-10-09T20:27:48.4237374Z   TEST_TYPE: minimal
+2022-10-09T20:27:48.4237834Z   DEFAULT_BRANCH: dev
+2022-10-09T20:27:48.4238321Z   spec_test_type: minimal
+2022-10-09T20:27:48.4238780Z ##[endgroup]
+2022-10-09T20:27:48.5029236Z With the provided path, there will be 1 file uploaded
+2022-10-09T20:27:48.5031981Z Starting artifact upload
+2022-10-09T20:27:48.5033769Z For more detailed logs during the artifact upload process, enable step-debugging: https://docs.github.com/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging#enabling-step-debug-logging
+2022-10-09T20:27:48.5034971Z Artifact name is valid!
+2022-10-09T20:27:48.9383068Z Container for artifact "test-capella" successfully created. Starting upload of file(s)
+2022-10-09T20:27:49.4122636Z Total size of all the files uploaded is 13180 bytes
+2022-10-09T20:27:49.4123474Z File upload process has finished. Finalizing the artifact upload
+2022-10-09T20:27:49.7971660Z Artifact has been finalized. All files have been successfully uploaded!
+2022-10-09T20:27:49.7972133Z 
+2022-10-09T20:27:49.7972507Z The raw size of all the files that were specified for upload is 191078 bytes
+2022-10-09T20:27:49.7973425Z The size of all the files that were uploaded is 13180 bytes. This takes into account any gzip compression used to reduce the upload size, time and storage
+2022-10-09T20:27:49.7979987Z 
+2022-10-09T20:27:49.7982571Z Note: The size of downloaded zips can differ significantly from the reported size. For more information see: https://github.com/actions/upload-artifact#zipped-artifact-downloads 
+2022-10-09T20:27:49.7983564Z 
+2022-10-09T20:27:49.7984218Z Artifact test-capella has been successfully uploaded!
+2022-10-09T20:27:49.8105010Z Post job cleanup.
+2022-10-09T20:27:49.9627823Z Cache hit occurred on the primary key 60daa32ca6be600ef610cfd1ac62abb92a07de36, not saving cache.
+2022-10-09T20:27:49.9923048Z Cleaning up orphan processes

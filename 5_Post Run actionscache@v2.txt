@@ -1,0 +1,5 @@
+2022-10-09T20:21:43.7710675Z Post job cleanup.
+2022-10-09T20:21:44.4537707Z [command]/usr/bin/tar --posix -z -cf cache.tgz -P -C /home/devops/consensus-specs/consensus-specs/consensus-specs/consensus-specs --files-from manifest.txt
+2022-10-09T20:21:45.8784829Z Cache Size: ~1 MB (1020557 B)
+2022-10-09T20:21:46.7583356Z Cache saved successfully
+2022-10-09T20:21:46.7597952Z Cache saved with key: 60daa32ca6be600ef610cfd1ac62abb92a07de36

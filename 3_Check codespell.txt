@@ -1,0 +1,9 @@
+2022-10-09T20:21:57.1502816Z ##[group]Run pip install 'codespell<3.0.0,>=2.0.0' --user &&  make codespell
+2022-10-09T20:21:57.1503791Z [36;1mpip install 'codespell<3.0.0,>=2.0.0' --user &&  make codespell[0m
+2022-10-09T20:21:57.1529793Z shell: /usr/bin/zsh {0}
+2022-10-09T20:21:57.1530456Z env:
+2022-10-09T20:21:57.1530953Z   TEST_TYPE: minimal
+2022-10-09T20:21:57.1531530Z   DEFAULT_BRANCH: dev
+2022-10-09T20:21:57.1532088Z ##[endgroup]
+2022-10-09T20:21:58.0892222Z Requirement already satisfied: codespell<3.0.0,>=2.0.0 in /usr/lib/python3/dist-packages (2.0.0)
+2022-10-09T20:21:58.2008310Z codespell . --skip ./.git -I .codespell-whitelist

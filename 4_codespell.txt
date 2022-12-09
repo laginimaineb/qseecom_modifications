@@ -1,0 +1,8 @@
+2022-10-09T20:21:49.7098620Z ##[section]Starting: Prepare job codespell
+2022-10-09T20:21:49.7099916Z Evaluating strategy
+2022-10-09T20:21:49.7100053Z Creating job '__default'
+2022-10-09T20:21:49.7100239Z Evaluating timeout
+2022-10-09T20:21:49.7100264Z Evaluating cancel timeout
+2022-10-09T20:21:49.7100292Z Evaluating continue on error
+2022-10-09T20:21:49.7100320Z Evaluating target
+2022-10-09T20:21:49.7101585Z ##[section]Finishing: Prepare job codespell

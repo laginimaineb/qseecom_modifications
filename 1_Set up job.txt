@@ -1,0 +1,25 @@
+2022-10-09T20:22:04.5614286Z Current runner version: '2.298.2'
+2022-10-09T20:22:04.5620578Z Runner name: 'github-actions-runner-01-02'
+2022-10-09T20:22:04.5621128Z Runner group name: 'Default'
+2022-10-09T20:22:04.5621813Z Machine name: 'github-actions-runner-01'
+2022-10-09T20:22:04.5623999Z ##[group]GITHUB_TOKEN Permissions
+2022-10-09T20:22:04.5624723Z Actions: read
+2022-10-09T20:22:04.5625079Z Checks: read
+2022-10-09T20:22:04.5625419Z Contents: read
+2022-10-09T20:22:04.5625741Z Deployments: read
+2022-10-09T20:22:04.5626077Z Discussions: read
+2022-10-09T20:22:04.5626403Z Issues: read
+2022-10-09T20:22:04.5626725Z Metadata: read
+2022-10-09T20:22:04.5627061Z Packages: read
+2022-10-09T20:22:04.5627538Z Pages: read
+2022-10-09T20:22:04.5627922Z PullRequests: read
+2022-10-09T20:22:04.5628381Z RepositoryProjects: read
+2022-10-09T20:22:04.5628873Z SecurityEvents: read
+2022-10-09T20:22:04.5629184Z Statuses: read
+2022-10-09T20:22:04.5629516Z ##[endgroup]
+2022-10-09T20:22:04.5632592Z Secret source: None
+2022-10-09T20:22:04.5633140Z Prepare workflow directory
+2022-10-09T20:22:04.6621902Z Prepare all required actions
+2022-10-09T20:22:04.6822312Z Getting action download info
+2022-10-09T20:22:04.9472498Z Download action repository 'actions/cache@v2' (SHA:937d24475381cd9c75ae6db12cb4e79714b926ed)
+2022-10-09T20:22:05.5077248Z Download action repository 'actions/upload-artifact@v2' (SHA:82c141cc518b40d92cc801eee768e7aafc9c2fa2)

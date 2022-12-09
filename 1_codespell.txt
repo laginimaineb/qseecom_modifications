@@ -1,0 +1,54 @@
+2022-10-09T20:21:49.8940023Z Requested labels: self-hosted
+2022-10-09T20:21:49.8940091Z Job defined at: ethereum/consensus-specs/.github/workflows/run-tests.yml@refs/pull/3028/merge
+2022-10-09T20:21:49.8940114Z Waiting for a runner to pick up this job...
+2022-10-09T20:21:50.0452473Z Job is about to start running on the runner: github-actions-runner-01-02 (repository)
+2022-10-09T20:21:54.1514774Z Current runner version: '2.298.2'
+2022-10-09T20:21:54.1520116Z Runner name: 'github-actions-runner-01-02'
+2022-10-09T20:21:54.1520788Z Runner group name: 'Default'
+2022-10-09T20:21:54.1521464Z Machine name: 'github-actions-runner-01'
+2022-10-09T20:21:54.1523616Z ##[group]GITHUB_TOKEN Permissions
+2022-10-09T20:21:54.1524364Z Actions: read
+2022-10-09T20:21:54.1524672Z Checks: read
+2022-10-09T20:21:54.1524994Z Contents: read
+2022-10-09T20:21:54.1525325Z Deployments: read
+2022-10-09T20:21:54.1525666Z Discussions: read
+2022-10-09T20:21:54.1526001Z Issues: read
+2022-10-09T20:21:54.1526314Z Metadata: read
+2022-10-09T20:21:54.1526621Z Packages: read
+2022-10-09T20:21:54.1526938Z Pages: read
+2022-10-09T20:21:54.1527293Z PullRequests: read
+2022-10-09T20:21:54.1527648Z RepositoryProjects: read
+2022-10-09T20:21:54.1528021Z SecurityEvents: read
+2022-10-09T20:21:54.1528372Z Statuses: read
+2022-10-09T20:21:54.1528674Z ##[endgroup]
+2022-10-09T20:21:54.1531806Z Secret source: None
+2022-10-09T20:21:54.1532384Z Prepare workflow directory
+2022-10-09T20:21:54.2387540Z Prepare all required actions
+2022-10-09T20:21:54.2544868Z Getting action download info
+2022-10-09T20:21:54.4938450Z Download action repository 'actions/cache@v2' (SHA:937d24475381cd9c75ae6db12cb4e79714b926ed)
+2022-10-09T20:21:55.3086772Z ##[group]Run actions/cache@v2
+2022-10-09T20:21:55.3087232Z with:
+2022-10-09T20:21:55.3087516Z   path: ./*
+2022-10-09T20:21:55.3087908Z   key: 60daa32ca6be600ef610cfd1ac62abb92a07de36
+2022-10-09T20:21:55.3088287Z env:
+2022-10-09T20:21:55.3088576Z   TEST_TYPE: minimal
+2022-10-09T20:21:55.3088935Z   DEFAULT_BRANCH: dev
+2022-10-09T20:21:55.3089346Z ##[endgroup]
+2022-10-09T20:21:57.0425813Z Received 1020557 of 1020557 (100.0%), 1.4 MBs/sec
+2022-10-09T20:21:57.0429976Z Cache Size: ~1 MB (1020557 B)
+2022-10-09T20:21:57.0478510Z [command]/usr/bin/tar -z -xf /home/devops/consensus-specs-02/consensus-specs-02/_temp/f05fa55c-79ee-43a3-8655-aa6d083abf6b/cache.tgz -P -C /home/devops/consensus-specs-02/consensus-specs-02/consensus-specs/consensus-specs
+2022-10-09T20:21:57.0973391Z Cache restored successfully
+2022-10-09T20:21:57.0992860Z 
+2022-10-09T20:21:57.1028817Z Cache restored from key: 60daa32ca6be600ef610cfd1ac62abb92a07de36
+2022-10-09T20:21:57.1502868Z ##[group]Run pip install 'codespell<3.0.0,>=2.0.0' --user &&  make codespell
+2022-10-09T20:21:57.1503809Z [36;1mpip install 'codespell<3.0.0,>=2.0.0' --user &&  make codespell[0m
+2022-10-09T20:21:57.1529827Z shell: /usr/bin/zsh {0}
+2022-10-09T20:21:57.1530476Z env:
+2022-10-09T20:21:57.1530972Z   TEST_TYPE: minimal
+2022-10-09T20:21:57.1531549Z   DEFAULT_BRANCH: dev
+2022-10-09T20:21:57.1532107Z ##[endgroup]
+2022-10-09T20:21:58.0892288Z Requirement already satisfied: codespell<3.0.0,>=2.0.0 in /usr/lib/python3/dist-packages (2.0.0)
+2022-10-09T20:21:58.2008386Z codespell . --skip ./.git -I .codespell-whitelist
+2022-10-09T20:21:58.4570225Z Post job cleanup.
+2022-10-09T20:21:58.6120811Z Cache hit occurred on the primary key 60daa32ca6be600ef610cfd1ac62abb92a07de36, not saving cache.
+2022-10-09T20:21:58.6421386Z Cleaning up orphan processes
